@@ -23,6 +23,9 @@ export const ProjectCard = ({
       <img
         src={`./assets/projects/${imgName}.png`}
         className="object-cover my-4 rounded-md shadow-md"
+        height="236"
+        width="420"
+        alt={name}
       />
       <p className="mb-4 text-md text-slate-800">{description}</p>
       <div className="flex justify-between w-full mt-auto justify-self-end">
@@ -50,6 +53,7 @@ export const ProjectCard = ({
                 height="32"
                 width="32"
                 className="w-8 h-8"
+                alt={`Github repository of ${name}`}
               />
             </a>
           </div>

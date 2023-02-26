@@ -35,8 +35,8 @@ export const ExperienceListElement = ({
 
   return (
     <div className="my-6">
-      <h5 className="text-2xl font-semibold">{position}</h5>
-      <h6 className="italic">{company}</h6>
+      <h4 className="text-2xl font-semibold">{position}</h4>
+      <h5 className="italic">{company}</h5>
       <p>
         {startDate}
         {' - ' + (endDate ?? 'now')}

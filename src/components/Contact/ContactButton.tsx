@@ -17,6 +17,7 @@ export const ContactButton = ({
           height="32"
           width="32"
           className="w-8 h-8"
+          alt={title}
         />
         <span>{title}</span>
       </div>
