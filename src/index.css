@@ -27,46 +27,43 @@ body {
 .animate-monitor-self-1 {
   position: absolute;
   left: -1000px;
-  -webkit-animation: slide 1s forwards;
-  -webkit-animation-delay: 0.4s;
-  animation: slide 1s forwards;
-  animation-delay: 0.4s;
+  -webkit-animation: slide 8s forwards 1.2s infinite;
+  animation: slide 8s forwards 1.2s infinite;
 }
 
 .animate-monitor-self-2 {
   position: absolute;
   left: -1000px;
-  -webkit-animation: slide 1s forwards;
-  -webkit-animation-delay: 0.8s;
-  animation: slide 1s forwards;
-  animation-delay: 0.8s;
+  -webkit-animation: slide 8s forwards 1.8s infinite;
+  animation: slide 8s forwards 1.8s infinite;
 }
 
 .animate-monitor-self-3 {
   position: absolute;
   left: -1000px;
-  -webkit-animation: slide 1s forwards;
-  -webkit-animation-delay: 1.2s;
-  animation: slide 1s forwards;
-  animation-delay: 1.2s;
+  -webkit-animation: slide 8s forwards 2.4s infinite;
+  animation: slide 8s forwards 2.4s infinite;
 }
 
 .animate-monitor > * {
   position: absolute;
   left: -1000px;
-  -webkit-animation: slide 1s forwards;
-  -webkit-animation-delay: 0.4s;
-  animation: slide 1s forwards;
-  animation-delay: 0.4s;
+  -webkit-animation: slide 8s forwards 0.6s infinite;
+  animation: slide 8s forwards 0.6s infinite;
 }
 
 @-webkit-keyframes slide {
   100% {
+    left: -1000px;
+    opacity: 0;
+  }
+  70% {
     left: 0;
     opacity: 1;
   }
-  50% {
-    opacity: 0;
+  10% {
+    left: 0;
+    opacity: 1;
   }
   0% {
     opacity: 0;
@@ -75,11 +72,16 @@ body {
 
 @keyframes slide {
   100% {
+    left: -1000px;
+    opacity: 0;
+  }
+  70% {
     left: 0;
     opacity: 1;
   }
-  50% {
-    opacity: 0;
+  10% {
+    left: 0;
+    opacity: 1;
   }
   0% {
     opacity: 0;
