@@ -60,7 +60,7 @@ body {
   animation-delay: 0.4s;
 }
 
-@-webkit-keyframes slide {
+@keyframes slide {
   100% {
     left: 0;
     opacity: 1;
@@ -73,7 +73,7 @@ body {
   }
 }
 
-@keyframes slide {
+@-webkit-keyframes slide {
   100% {
     left: 0;
     opacity: 1;
