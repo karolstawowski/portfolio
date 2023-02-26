@@ -10,10 +10,10 @@ export const About = (): JSX.Element => {
         <SectionTitle>About me</SectionTitle>
         <p className="py-4 text-slate-800 ">
           Hi, my name is <b>Karol</b>. As a junior frontend developer, I have
-          honed my programming skills for the past 7 years, acquiring expertise
-          in multiple programming languages. My passion for creating beautiful,
-          user-friendly, and responsive web applications has driven me to make
-          projects in various areas of the IT industry.
+          sharpened my programming skills for the past 7 years, acquiring
+          expertise in multiple programming languages. My passion for creating
+          beautiful, user-friendly, and responsive web applications has driven
+          me to make projects in various areas of the IT industry.
         </p>
       </div>
       <div className="mt-2 ml-auto rounded-md h-80 xs:h-56 md:h-80 2xl:h-72 bg-console-bg lg:w-11/12 md:ml-0 md:col-span-2">
