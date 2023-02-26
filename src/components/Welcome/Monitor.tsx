@@ -1,6 +1,6 @@
 export const Monitor = (): JSX.Element => {
   return (
-    <div className="w-[800px] h-[560px] scale-[.3] -mb-96 lg:-mb-64 xl:-mb-52 2xl:-mb-36 origin-top-left mt-8 sm:-mt-32 md:-mt-24 lg:scale-50 lg:-mt-20 xl:scale-[0.6] 2xl:scale-[0.7]">
+    <div className="w-[800px] h-[560px] scale-[.3] -mb-96 lg:-mb-64 xl:-mb-52 2xl:-mb-36 origin-top-left mt-8 sm:-mt-32 md:-mt-24 lg:scale-50 lg:-mt-20 2xl:-mt-12 xl:scale-[0.6] 2xl:scale-[0.7]">
       <div className="relative bg-monitor-outer-border w-full h-[466px] flex justify-center rounded-md">
         <div className="absolute w-1 h-1 bg-slate-400 bottom-2 right-12" />
         <div className="bg-monitor-bg m-4 w-full h-[418px] box-border flex flex-wrap overflow-hidden">
