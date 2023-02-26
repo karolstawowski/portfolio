@@ -1,3 +1,87 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  width: 100%;
+  background: #e2e8f0;
+}
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#0284c7, #0284c7);
+  background-size: 0 3px;
+  background-position: 0 95%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease-in-out;
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 95%;
+}
+
+.animate-monitor-self-1 {
+  position: absolute;
+  left: -1000px;
+  -webkit-animation: slide 1s forwards;
+  -webkit-animation-delay: 0.4s;
+  animation: slide 1s forwards;
+  animation-delay: 0.4s;
+}
+
+.animate-monitor-self-2 {
+  position: absolute;
+  left: -1000px;
+  -webkit-animation: slide 1s forwards;
+  -webkit-animation-delay: 0.8s;
+  animation: slide 1s forwards;
+  animation-delay: 0.8s;
+}
+
+.animate-monitor-self-3 {
+  position: absolute;
+  left: -1000px;
+  -webkit-animation: slide 1s forwards;
+  -webkit-animation-delay: 1.2s;
+  animation: slide 1s forwards;
+  animation-delay: 1.2s;
+}
+
+.animate-monitor > * {
+  position: absolute;
+  left: -1000px;
+  -webkit-animation: slide 1s forwards;
+  -webkit-animation-delay: 0.4s;
+  animation: slide 1s forwards;
+  animation-delay: 0.4s;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 0;
+  }
+}

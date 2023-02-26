@@ -1,5 +1,31 @@
-const App = () => {
-  return <></>;
-};
+import { About } from './components/About'
+import { Contact } from './components/Contact'
+import { Experience } from './components/Experience'
+import { Footer } from './components/Footer'
+import { Projects } from './components/Projects'
+import { Technologies } from './components/Technologies'
+import { Welcome } from './components/Welcome'
+import { Navbar } from './components/Welcome/NavigationBar'
 
-export default App;
+const App = (): JSX.Element => {
+  return (
+    <>
+      <Navbar />
+      <div className="min-w-[283px] px-6 xs:px-12 md:px-20 lg:px-28 xl:px-36 2xl:px-72">
+        <Welcome />
+      </div>
+      <About />
+      <div className="min-w-[300px] px-6 xs:px-12 md:px-20 lg:px-28 xl:px-36 2xl:px-72">
+        <Technologies />
+      </div>
+      <Projects />
+      <div className="min-w-[300px] px-6 xs:px-12 md:px-20 lg:px-28 xl:px-36 2xl:px-72">
+        <Experience />
+        <Contact />
+      </div>
+      <Footer />
+    </>
+  )
+}
+
+export default App
