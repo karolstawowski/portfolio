@@ -10,7 +10,7 @@ export const TechButton = ({
   return (
     <div className="flex flex-wrap items-center justify-center w-20 h-20 rounded-md shadow-xl bg-sky-100 hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.2)]">
       <img
-        src={`/assets/${imageName}.svg`}
+        src={`./assets/${imageName}.svg`}
         height="32"
         width="32"
         alt={name}

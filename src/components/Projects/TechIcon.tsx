@@ -7,7 +7,7 @@ export const TechIcon = ({ name, imageName }: TechIconProps): JSX.Element => {
   return (
     <div className="relative flex flex-wrap items-center justify-center w-10 h-10 rounded-md shadow-md bg-sky-100 group">
       <img
-        src={`/assets/${imageName}.svg`}
+        src={`./assets/${imageName}.svg`}
         height="40"
         width="40"
         alt={name}

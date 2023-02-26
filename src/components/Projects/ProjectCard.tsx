@@ -46,7 +46,7 @@ export const ProjectCard = ({
               className="flex items-center justify-center w-full h-full rounded-full hover:shadow-[0_0_16px_8px_rgba(0,0,0,0.15)]"
             >
               <img
-                src="/assets/github.svg"
+                src="./assets/github.svg"
                 height="32"
                 width="32"
                 className="w-8 h-8"
