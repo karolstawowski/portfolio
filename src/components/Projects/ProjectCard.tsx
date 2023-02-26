@@ -21,7 +21,7 @@ export const ProjectCard = ({
       <h4 className="w-full text-xl font-semibold">{name}</h4>
       <div className="w-10 h-[2px] bg-sky-600 mt-2" />
       <img
-        src={`/assets/projects/${imgName}.png`}
+        src={`./assets/projects/${imgName}.png`}
         className="object-cover my-4 rounded-md shadow-md"
       />
       <p className="mb-4 text-md">{description}</p>
