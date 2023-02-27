@@ -13,7 +13,7 @@ export const About = (): JSX.Element => {
           sharpened my programming skills for the past 7 years, acquiring
           expertise in multiple programming languages. My passion for creating
           beautiful, user-friendly, and responsive web applications has driven
-          me to make projects in various areas of the IT industry.
+          me to make and participate in various projects.
         </p>
       </div>
       <div className="mt-2 ml-auto rounded-md h-80 xs:h-56 md:h-80 2xl:h-72 bg-console-bg lg:w-11/12 md:ml-0 md:col-span-2">
@@ -24,8 +24,8 @@ export const About = (): JSX.Element => {
         </div>
         <p className="mx-6 my-4 text-base text-slate-200">
           Alongside my programming experience, I am pursuing a degree in
-          computer science to supplement my practical knowledge with theoretical
-          understanding.
+          computer science to acquire knowledge on how to create solutions to
+          real-world problems through technology.
         </p>
       </div>
     </div>
