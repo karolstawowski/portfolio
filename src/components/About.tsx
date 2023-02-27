@@ -3,7 +3,7 @@ import { SectionTitle } from './SectionTitle'
 export const About = (): JSX.Element => {
   return (
     <div
-      className="px-6 py-8 my-8 text-lg md:grid-cols-5 md:grid bg-sky-300 xs:px-12 md:px-20 lg:px-28 xl:px-36 2xl:px-72"
+      className="px-6 py-8 my-8 text-lg md:grid-cols-5 md:grid bg-sky-300 xs:px-12 md:px-20 lg:px-28 xl:px-44 2xl:px-80"
       id="about"
     >
       <div className="md:col-span-3 md:mr-24 2xl:mr-44">

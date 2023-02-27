@@ -11,15 +11,15 @@ const App = (): JSX.Element => {
   return (
     <>
       <Navbar />
-      <div className="min-w-[283px] px-6 xs:px-12 md:px-20 lg:px-28 xl:px-36 2xl:px-72">
+      <div className="min-w-[283px] px-6 xs:px-12 md:px-20 lg:px-28 xl:px-44 2xl:px-72">
         <Welcome />
       </div>
       <About />
-      <div className="min-w-[300px] px-6 xs:px-12 md:px-20 lg:px-28 xl:px-36 2xl:px-72">
+      <div className="min-w-[300px] px-6 xs:px-12 md:px-20 lg:px-28 xl:px-44 2xl:px-80">
         <Technologies />
       </div>
       <Projects />
-      <div className="min-w-[300px] px-6 xs:px-12 md:px-20 lg:px-28 xl:px-36 2xl:px-72">
+      <div className="min-w-[300px] px-6 xs:px-12 md:px-20 lg:px-28 xl:px-44 2xl:px-80">
         <Experience />
         <Contact />
       </div>
