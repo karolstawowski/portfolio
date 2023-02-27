@@ -1,7 +1,6 @@
 import {
   familiarTechnologies,
   proficientTechnologies,
-  technologiesList,
 } from '../utils/technologiesList'
 import { SectionTitle } from './SectionTitle'
 import { TechButton } from './Technologies/TechButton'
