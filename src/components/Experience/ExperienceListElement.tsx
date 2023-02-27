@@ -35,7 +35,7 @@ export const ExperienceListElement = ({
 
   return (
     <div className="my-6">
-      <h4 className="text-2xl font-semibold">{position}</h4>
+      <h4 className="text-lg font-semibold md:text-2xl">{position}</h4>
       <h5 className="italic">{company}</h5>
       <p>
         {startDate}
