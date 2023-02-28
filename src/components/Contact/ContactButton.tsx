@@ -1,4 +1,4 @@
-type ContactButtonProps = {
+export type ContactButtonProps = {
   title: string
   linkTo: string
   imgName: string

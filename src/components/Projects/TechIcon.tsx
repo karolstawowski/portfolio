@@ -1,4 +1,4 @@
-type TechIconProps = {
+export type TechIconProps = {
   name: string
   imageName: string
 }
