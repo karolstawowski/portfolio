@@ -9,4 +9,6 @@ Portfolio made using React.js and Typescript. It contains of my technology stack
 - React.js
 - TypeScript
 - Tailwind
+- Vitest
+- React Testing Library
 - Vite
