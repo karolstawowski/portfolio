@@ -26,6 +26,8 @@ export const proficientTechnologies: Array<Technology> = [
 
 export const familiarTechnologies: Array<Technology> = [
   { name: 'SASS', imageName: 'sass' },
+  { name: 'Jest', imageName: 'jest' },
+  { name: 'Vitest', imageName: 'vitest' },
   { name: 'Node.js', imageName: 'nodejs' },
   { name: 'Express.js', imageName: 'expressjs' },
   { name: 'tRPC', imageName: 'trpc' },

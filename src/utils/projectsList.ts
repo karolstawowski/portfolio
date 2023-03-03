@@ -35,9 +35,12 @@ export const projectsList: ProjectEntry[] = [
         'React.js',
         'TypeScript',
         'Tailwind',
+        'RTL',
+        'Vitest',
         'Node.js',
-        'PostgreSQL',
+        'Express.js',
         'tRPC',
+        'PostgreSQL',
         'Vite',
       ],
       iconsList
