@@ -22,7 +22,7 @@ export const projectsList: ProjectEntry[] = [
     imageName: 'formula1',
     description:
       'Web application presenting official Formula 1 driver and team standings. Written fully in pure JavaScript.',
-    technologies: filterIcons(['JavaScript', 'Vite'], iconsList),
+    technologies: filterIcons(['JavaScript', 'SASS', 'Vite'], iconsList),
     repositoryUrl:
       'https://github.com/karolstawowski/Formula_1_Standings_Website',
     livePreviewUrl:
