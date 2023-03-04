@@ -6,6 +6,7 @@ type ProjectEntry = {
   technologies: Technology[]
   description: string
   repositoryUrl?: string
+  livePreviewUrl?: string
 }
 
 const filterIcons = (
@@ -24,6 +25,8 @@ export const projectsList: ProjectEntry[] = [
     technologies: filterIcons(['JavaScript', 'Vite'], iconsList),
     repositoryUrl:
       'https://github.com/karolstawowski/Formula_1_Standings_Website',
+    livePreviewUrl:
+      'https://karolstawowski.github.io/Formula_1_Standings_Website/',
   },
   {
     name: 'Weather Station',
@@ -56,6 +59,7 @@ export const projectsList: ProjectEntry[] = [
       iconsList
     ),
     repositoryUrl: 'https://github.com/karolstawowski/MinesweeperTS',
+    livePreviewUrl: 'https://karolstawowski.github.io/MinesweeperTS',
   },
   {
     name: 'OxiZip',

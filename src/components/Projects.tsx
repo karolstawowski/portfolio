@@ -16,6 +16,7 @@ export const Projects = (): JSX.Element => {
                 description={project.description}
                 technologies={project.technologies}
                 repositoryUrl={project.repositoryUrl}
+                livePreviewUrl={project.livePreviewUrl}
               />
             </div>
           ))}
