@@ -4,8 +4,8 @@ export type Technology = {
 }
 
 export const proficientTechnologies: Array<Technology> = [
-  { name: 'JavaScript', imageName: 'js' },
   { name: 'TypeScript', imageName: 'ts' },
+  { name: 'JavaScript', imageName: 'js' },
   { name: 'React.js', imageName: 'reactjs' },
   { name: 'HTML5', imageName: 'html5' },
   { name: 'CSS3', imageName: 'css3' },
@@ -36,7 +36,6 @@ export const familiarTechnologies: Array<Technology> = [
   { name: 'Python', imageName: 'python' },
   { name: 'PHP', imageName: 'php' },
   { name: 'Tensorflow', imageName: 'tensorflow' },
-  { name: 'R', imageName: 'r' },
 ]
 
 export const iconsList: Array<Technology> =
