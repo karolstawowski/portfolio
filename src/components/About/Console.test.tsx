@@ -1,13 +1,13 @@
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
 import { Console } from './Console'
 
 describe(Console.name, () => {
   it('displays paragraph with text', () => {
-    const { container } = render(<Console />)
+    render(<Console />)
 
-    const paragraph = container.querySelector('p')
-
-    expect(paragraph).toBeInTheDocument()
+    expect(screen.getByText('Karol@PC')).toBeInTheDocument()
+    expect(screen.getByText('main')).toBeInTheDocument()
+    expect(screen.getByText('~/src')).toBeInTheDocument()
   })
 })
