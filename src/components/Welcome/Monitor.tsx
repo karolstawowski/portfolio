@@ -121,8 +121,8 @@ export const Monitor = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <div className="w-16 h-24 m-auto bg-gradient-to-b from-[#19191A] to-monitor-stand"></div>
-      <div className="h-4 m-auto rounded-t-lg w-96 bg-monitor-stand"></div>
+      <div className="w-16 h-24 m-auto bg-gradient-to-b from-[#19191A] to-monitor-stand" />
+      <div className="h-4 m-auto rounded-t-lg w-96 bg-monitor-stand" />
     </div>
   )
 }
