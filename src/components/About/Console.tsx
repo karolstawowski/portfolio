@@ -20,9 +20,9 @@ export const Console = (): JSX.Element => {
           ~/src
         </span>
         <span className="leading-5">
-          Alongside my programming experience, I am pursuing a degree in
-          computer science to acquire knowledge on how to create solutions to
-          real-world problems through technology.
+          Alongside my programming experience, I am pursuing a{' '}
+          <b>degree in computer science</b> to acquire knowledge on how to
+          create solutions to real-world problems through technology.
         </span>
       </div>
     </div>

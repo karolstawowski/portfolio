@@ -10,11 +10,13 @@ export const About = (): JSX.Element => {
       <div className="md:col-span-3 md:mr-24 2xl:mr-44">
         <SectionTitle>About me</SectionTitle>
         <p className="py-4 text-slate-800 md:text-lg">
-          Hi, my name is <b>Karol</b>. As a junior frontend developer, I have
-          sharpened my programming skills for the past 7 years, acquiring
-          expertise in multiple programming languages. My passion for creating
-          beautiful, user-friendly, and responsive web applications has driven
-          me to make and participate in various projects.
+          Hi, my name is <b>Karol</b>. As a frontend developer, I have sharpened
+          my programming skills for the past{' '}
+          <b>{new Date().getFullYear() - 2016} years</b> (
+          {new Date().getFullYear() - 2020} years as a frontend developer),
+          acquiring expertise in multiple programming languages. My passion for
+          creating beautiful, user-friendly, and responsive web applications has
+          driven me to make and participate in various projects.
         </p>
       </div>
       <Console />
