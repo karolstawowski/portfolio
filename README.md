@@ -1,6 +1,6 @@
 # ✨ Portfolio 
 
-## [Live website](https://portfolio-karolstawowski.vercel.app/)
+## [Live website](https://karolstawowski.github.io/portfolio/)
 
 ## Description
 
