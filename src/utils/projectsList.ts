@@ -45,6 +45,8 @@ export const projectsList: ProjectEntry[] = [
         'tRPC',
         'PostgreSQL',
         'Vite',
+        'i18next',
+        'React Router',
       ],
       iconsList
     ),

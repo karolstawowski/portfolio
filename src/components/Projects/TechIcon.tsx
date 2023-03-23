@@ -13,7 +13,7 @@ export const TechIcon = ({ name, imageName }: TechIconProps): JSX.Element => {
         alt={name}
         className="w-8 h-8"
       />
-      <span className="absolute z-10 px-2 py-1 m-4 mx-auto text-xs transition-opacity -translate-x-1/2 translate-y-10 rounded-md opacity-0 text-sky-100 bg-sky-900 group-hover:opacity-100 left-1/2">
+      <span className="absolute z-10 px-2 py-1 m-4 mx-auto text-xs text-center transition-opacity -translate-x-1/2 translate-y-10 rounded-md opacity-0 text-sky-100 bg-sky-900 group-hover:opacity-100 left-1/2">
         {name}
       </span>
     </div>

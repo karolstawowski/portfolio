@@ -29,10 +29,10 @@ export const ProjectCard = ({
         width="420"
         alt={name}
       />
-      <p className="mb-4 text-md text-slate-800">{description}</p>
+      <p className="mb-6 text-md text-slate-800">{description}</p>
       <div className="flex justify-between w-full mt-auto justify-self-end">
         <div
-          className={`flex flex-wrap gap-1 ${
+          className={`flex flex-wrap gap-x-1 gap-y-3 ${
             repositoryUrl ? 'w-3/4' : 'w-full'
           }`}
         >
