@@ -29,10 +29,10 @@ export const projectsList: ProjectEntry[] = [
       'https://karolstawowski.github.io/Formula_1_Standings_Website/',
   },
   {
-    name: 'Weather Station',
+    name: 'Zefir',
     imageName: 'weather_station',
     description:
-      'Weather station based on Raspberry Pi with integrated frontend, backend and database server. It measures critical air condition parameters: temperature, humidity, VOC, PM2.5, PM10, CO₂ and AQI.',
+      'Air quality station based on Raspberry Pi with integrated frontend, backend and database server. It measures, stores and presents critical air condition parameters. Uses ESP32 and air quality sensors.',
     technologies: filterIcons(
       [
         'React.js',
