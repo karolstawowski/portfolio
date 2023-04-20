@@ -47,6 +47,7 @@ export const projectsList: ProjectEntry[] = [
         'Vite',
         'i18next',
         'React Router',
+        'Docker',
       ],
       iconsList
     ),
