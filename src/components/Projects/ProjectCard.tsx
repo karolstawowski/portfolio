@@ -50,6 +50,7 @@ export const ProjectCard = ({
             href={livePreviewUrl}
             target="_blank"
             className="relative flex flex-wrap mr-1 group"
+            aria-label={`Live ${name} project preview`}
           >
             <span className="block p-1 text-green-600 bg-green-300 rounded-md shadow-md fill-current hover:shadow-[0_4px_16px_-1px_rgba(0,0,0,0.2)]">
               <svg
@@ -81,6 +82,7 @@ export const ProjectCard = ({
             href={repositoryUrl}
             className="relative group flex items-center justify-center w-10 h-10 bg-white rounded-lg shadow-md hover:shadow-[0_4px_16px_-1px_rgba(0,0,0,0.2)]"
             target="_blank"
+            aria-label={`Github repository of ${name}`}
           >
             <img
               src="./assets/github.svg"

@@ -12,11 +12,12 @@ export const Link = ({ title }: LinkProps): JSX.Element => {
   }
 
   return (
-    <span
+    <a
       className="p-1 mx-2 cursor-pointer link-underline last:hidden last:lg:inline"
       onClick={(): void => handleClickScroll(linkTo)}
+      aria-label={linkTo}
     >
       {title}
-    </span>
+    </a>
   )
 }
