@@ -16,7 +16,7 @@ export const ContactButton = ({
       target="_blank"
       aria-label={title}
     >
-      <div className="flex items-center h-full rounded-lg shadow-xl justify-evenly bg-sky-300">
+      <div className="flex items-center h-full rounded-lg shadow-lg justify-evenly bg-sky-300 hover:shadow-xl hover:bg-sky-400 active:bg-sky-500">
         <img
           src={`./assets/${imgName}.svg`}
           height="32"
