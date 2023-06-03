@@ -19,12 +19,12 @@ export const ProjectCard = ({
   livePreviewUrl,
 }: ProjectCardProps): JSX.Element => {
   return (
-    <div className="min-w-[228px] box-content  ease-in-out duration-300 transition-shadow p-6 xs:p-8 md:p-12 bg-sky-100 rounded-lg lg:w-[420px] flex flex-col shadow-md hover:shadow-2xl">
+    <div className="min-w-[228px] box-content ease-in-out duration-300 transition-shadow p-6 xs:p-8 md:p-10 bg-sky-100 rounded-lg lg:w-[420px] flex flex-col shadow-md hover:shadow-2xl">
       <h4 className="w-full text-xl font-semibold">{name}</h4>
       <div className="w-10 h-[2px] bg-sky-600 mt-2" />
       <img
         src={`./assets/projects/${imgName}.png`}
-        className="object-cover w-full my-4 rounded-md shadow-md"
+        className="object-cover w-full my-4 rounded-md"
         height="236"
         width="420"
         alt={name}
