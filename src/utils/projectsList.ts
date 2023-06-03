@@ -21,7 +21,7 @@ export const projectsList: ProjectEntry[] = [
     name: 'Formula 1 Standings Website',
     imageName: 'formula1',
     description:
-      'Web application presenting official Formula 1 driver and team standings. Written fully in pure JavaScript.',
+      'Web application presenting official Formula 1 driver and team standings. Application displays informations about previous and upcoming F1 races. Written fully in pure JavaScript. Uses external APIs.',
     technologies: filterIcons(['JavaScript', 'SASS', 'Vite'], iconsList),
     repositoryUrl:
       'https://github.com/karolstawowski/Formula_1_Standings_Website',
@@ -32,7 +32,7 @@ export const projectsList: ProjectEntry[] = [
     name: 'Zefir',
     imageName: 'weather_station',
     description:
-      'Air quality station based on Raspberry Pi with integrated frontend, backend and database server. It measures, stores and presents critical air condition parameters. Uses ESP32 and air quality sensors.',
+      'Air quality station based on Raspberry Pi 4 B with integrated frontend, backend and database server. It measures, stores and presents air condition parameters. Measuring unit contains of ESP32 module and various air quality sensors.',
     technologies: filterIcons(
       [
         'React.js',
@@ -56,7 +56,7 @@ export const projectsList: ProjectEntry[] = [
     name: 'MinesweeperTS',
     imageName: 'minesweeper',
     description:
-      'React and TypeScript implementation of popular old-school single person video game Minesweeper. The player must uncover a grid of tiles, some of which contain mines.',
+      'React and TypeScript implementation of popular old-school single person game Minesweeper. The player must uncover a grid of tiles, some of which contain mines.',
     technologies: filterIcons(
       ['React.js', 'TypeScript', 'Tailwind', 'Vite'],
       iconsList
@@ -76,7 +76,7 @@ export const projectsList: ProjectEntry[] = [
     name: 'False Bravery',
     imageName: 'false_bravery',
     description:
-      'A Discord Bot for League of Legends players which creates an image with random champion, summoner spells, items and skill order - then sends it to the selected Discord channel.',
+      'A Discord Bot for League of Legends players which creates images with random champion, summoner spells, items and skill orders - then sends it to the selected Discord channel.',
     technologies: filterIcons(['Python'], iconsList),
     repositoryUrl: 'https://github.com/karolstawowski/false_bravery',
   },
@@ -84,7 +84,7 @@ export const projectsList: ProjectEntry[] = [
     name: 'Weather Image Recognition',
     imageName: 'weather_image_recognition',
     description:
-      'Machine learning model based on Convolutional Neural Network with an objective of recognising weather present in images. Test dataset accuracy: 68.82%',
+      'Machine learning model based on Convolutional Neural Network with an objective of recognising weather present in images. Achieved test dataset accuracy on the level of 68.8%.',
     technologies: filterIcons(['Tensorflow', 'Python'], iconsList),
     repositoryUrl: 'https://github.com/karolstawowski/WeatherImageRecognition',
   },
