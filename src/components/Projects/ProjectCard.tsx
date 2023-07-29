@@ -21,7 +21,7 @@ export const ProjectCard = ({
   livePreviewUrl,
 }: ProjectCardProps): JSX.Element => {
   return (
-    <div className="min-w-[228px] box-content ease-in-out duration-300 transition-shadow p-6 xs:p-8 bg-blue-100 rounded-lg flex flex-col shadow">
+    <div className="hover-zoom min-w-[228px] box-content ease-in-out duration-300 transition-shadow p-6 xs:p-8 bg-blue-100 rounded-lg flex flex-col shadow">
       <h4 className="w-full text-xl font-semibold">{name}</h4>
       <div className="w-10 h-[2px] bg-accent mt-2" />
       <img
