@@ -7,6 +7,9 @@ module.exports = {
       xs: '420px',
       ...defaultTheme.screens,
     },
+    fontFamily: {
+      console: ['consolas', 'monaco', 'monospace'],
+    },
     extend: {
       colors: {
         primary: '#93c5fd',
