@@ -6,14 +6,19 @@ import { SectionTitle } from './SectionTitle'
 
 const experienceList: Array<ExperienceListElementProps> = [
   {
+    position: 'Full Stack Developer',
+    company: 'Night Woods',
+    since: new Date(2023, 3),
+  },
+  {
     position: 'Frontend Developer',
-    company: 'Night Woods, Wrocław',
+    company: 'Night Woods',
     since: new Date(2022, 2),
     to: new Date(2022, 9),
   },
   {
     position: 'Trainee Junior Frontend Developer',
-    company: 'Tom&Co, Katowice',
+    company: 'Tom&Co',
     since: new Date(2021, 7),
     to: new Date(2021, 8),
   },
@@ -22,9 +27,10 @@ const experienceList: Array<ExperienceListElementProps> = [
 const educationList: Array<ExperienceListElementProps> = [
   {
     position: 'University of Economics in Katowice',
-    company: 'Computer Science, Databases and Data Engineering specialisation',
+    company:
+      'Bachelor of Computer Science, Databases and Data Engineering specialisation',
     since: new Date(2020, 9),
-    to: new Date(2023, 5),
+    to: new Date(2023, 6),
   },
 ]
 

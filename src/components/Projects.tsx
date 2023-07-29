@@ -1,15 +1,25 @@
-import { projectsList } from '../utils/projectsList'
+import { StarFilled } from '../icons/StarFilled'
+import { openSourceProjectsList, projectsList } from '../utils/projectsList'
+import { OpenSourceProjectCard } from './Projects/OpenSourceProjectCard'
 import { ProjectCard } from './Projects/ProjectCard'
+import { RepositoryButton } from './Projects/RepositoryButton'
 import { SectionTitle } from './SectionTitle'
 
 export const Projects = (): JSX.Element => {
   return (
-    <div className="py-8 my-8 bg-sky-300" id="projects">
-      <div className="px-6 xs:px-12 md:px-20 lg:px-28 xl:px-44 2xl:px-80">
-        <SectionTitle>Projects</SectionTitle>
-        <div className="grid gap-4 mt-6 sm:gap-8 lg:grid-cols-2 md:gap-12 lg:gap-8 2xl:gap-12">
+    <div className="flex flex-col gap-16 py-12 bg-primary" id="projects">
+      <div className="flex flex-col gap-6 px-6 xs:px-12 md:px-20 lg:px-28 xl:px-44 2xl:px-44">
+        <div className="flex items-center w-full gap-4">
+          <div className="flex-auto h-[2px] bg-accent" />
+          <SectionTitle>Selected projects</SectionTitle>
+          <div className="flex-auto h-[2px] bg-accent" />
+        </div>
+        <div className="grid gap-4 sm:gap-8 lg:grid-cols-2 2xl:grid-cols-3 lg:gap-6 2xl:gap-8">
           {projectsList.map((project) => (
-            <div className="flex justify-center" key={project.name}>
+            <div
+              className="flex even:justify-end odd:justify-start"
+              key={project.name}
+            >
               <ProjectCard
                 name={project.name}
                 imgName={project.imageName}
@@ -19,6 +29,16 @@ export const Projects = (): JSX.Element => {
                 livePreviewUrl={project.livePreviewUrl}
               />
             </div>
+          ))}
+        </div>
+        <div className="flex items-center w-full gap-4 mt-8">
+          <div className="flex-auto h-[2px] bg-accent" />
+          <SectionTitle>Open source projects I participated in</SectionTitle>
+          <div className="flex-auto h-[2px] bg-accent" />
+        </div>
+        <div className="flex flex-col gap-2 rounded-md lg:gap-x-4 lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:flex-row">
+          {openSourceProjectsList.map((project) => (
+            <OpenSourceProjectCard project={project} />
           ))}
         </div>
       </div>

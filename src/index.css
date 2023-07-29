@@ -6,23 +6,21 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   width: 100%;
-  background: #e2e8f0;
   min-width: 300px;
 }
 
 .link-underline {
   border-bottom-width: 0;
-  background-image: linear-gradient(transparent, transparent),
-    linear-gradient(#0284c7, #0284c7);
-  background-size: 0 3px;
-  background-position: 0 95%;
+  background-image: linear-gradient(#73787d, #73787d);
+  background-size: 0 2px;
+  background-position: 0 96%;
   background-repeat: no-repeat;
   transition: background-size 0.2s ease-in-out;
 }
 
 .link-underline:hover {
-  background-size: 100% 3px;
-  background-position: 0 95%;
+  background-size: 100% 2px;
+  background-position: 0 96%;
 }
 
 .animate-monitor-self-1 {

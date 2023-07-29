@@ -6,6 +6,11 @@ const contactButtons: { title: string; linkTo: string; imgName: string }[] = [
     imgName: 'linkedin',
     linkTo: 'https://www.linkedin.com/in/karolstawowski/',
   },
+  {
+    title: 'Github',
+    imgName: 'github',
+    linkTo: 'https://github.com/karolstawowski',
+  },
   { title: 'Email', imgName: 'email', linkTo: 'mailto:karol_stawowski@wp.pl' },
 ]
 

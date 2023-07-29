@@ -9,6 +9,9 @@ module.exports = {
     },
     extend: {
       colors: {
+        primary: '#93c5fd',
+        secondary: '#fde3c9',
+        accent: '#4374ad',
         'monitor-inner-border': '#32323C',
         'monitor-side-pannel': '#0B0D14',
         'monitor-outer-border': '#393A3C',

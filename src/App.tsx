@@ -9,7 +9,7 @@ import { Navbar } from './components/Welcome/NavigationBar'
 
 const App = (): JSX.Element => {
   return (
-    <>
+    <div className="bg-white">
       <Navbar />
       <div className="min-w-[283px] px-6 xs:px-12 md:px-20 lg:px-28 xl:px-44 2xl:px-72">
         <Welcome />
@@ -24,7 +24,7 @@ const App = (): JSX.Element => {
         <Contact />
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 
