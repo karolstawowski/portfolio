@@ -33,6 +33,7 @@ export const familiarTechnologies: Array<Technology> = [
   { name: 'Express.js', imageName: 'expressjs' },
   { name: 'React Router', imageName: 'react-router' },
   { name: 'tRPC', imageName: 'trpc' },
+  { name: 'Next.js', imageName: 'nextjs' },
   { name: 'Docker', imageName: 'docker' },
   { name: 'Vite', imageName: 'vite' },
   { name: 'i18next', imageName: 'i18next' },
