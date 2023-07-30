@@ -9,7 +9,7 @@ export const proficientTechnologies: Array<Technology> = [
   { name: 'React.js', imageName: 'reactjs' },
   { name: 'HTML5', imageName: 'html5' },
   { name: 'CSS3', imageName: 'css3' },
-  { name: 'TailwindCSS', imageName: 'tailwind' },
+  { name: 'Tailwind', imageName: 'tailwind' },
   { name: 'Prisma', imageName: 'prisma' },
   { name: 'MaterialUI', imageName: 'materialui' },
   { name: 'Remix', imageName: 'remix' },
