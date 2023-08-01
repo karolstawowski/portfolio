@@ -39,7 +39,7 @@ export const projectsList: ProjectEntry[] = [
     name: 'Zefir',
     imageName: 'weather_station',
     description:
-      'Air quality station based on Raspberry Pi 4 B with integrated frontend, backend and database server. It measures, stores and presents air condition parameters. Measuring unit contains of ESP32 module and various air quality sensors.',
+      'Air quality station based on Raspberry Pi 4B with integrated frontend, backend and database server. It measures, stores and presents air condition parameters. Measuring unit contains of various air quality sensors.',
     technologies: filterIcons(
       [
         'React.js',

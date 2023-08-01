@@ -14,6 +14,7 @@ const monthNames = [
 ]
 
 export type ExperienceListElementProps = {
+  id: number
   position: string
   company: string
   since: Date

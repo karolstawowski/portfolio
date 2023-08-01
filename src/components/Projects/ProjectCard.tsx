@@ -52,7 +52,7 @@ export const ProjectCard = ({
         {repositoryUrl ? (
           <a
             href={repositoryUrl}
-            className="flex items-center justify-center w-10 h-10 bg-white rounded-lg outline outline-2 outline-blue-600 hover:outline-blue-300 active:outline-blue-400"
+            className="flex items-center justify-center w-10 h-10 bg-white rounded-lg outline outline-2 outline-blue-400 hover:outline-blue-300 active:outline-blue-200"
             target="_blank"
             aria-label={`Github repository of ${name}`}
           >

@@ -6,17 +6,20 @@ import { SectionTitle } from './SectionTitle'
 
 const experienceList: Array<ExperienceListElementProps> = [
   {
+    id: 1,
     position: 'Full Stack Developer',
     company: 'Night Woods',
     since: new Date(2023, 3),
   },
   {
+    id: 2,
     position: 'Frontend Developer',
     company: 'Night Woods',
     since: new Date(2022, 2),
     to: new Date(2022, 9),
   },
   {
+    id: 3,
     position: 'Trainee Junior Frontend Developer',
     company: 'Tom&Co',
     since: new Date(2021, 7),
@@ -26,6 +29,7 @@ const experienceList: Array<ExperienceListElementProps> = [
 
 const educationList: Array<ExperienceListElementProps> = [
   {
+    id: 4,
     position: 'University of Economics in Katowice',
     company:
       'Bachelor of Computer Science, Databases and Data Engineering specialisation',
@@ -44,7 +48,8 @@ export const Experience = (): JSX.Element => {
         <SectionTitle>Experience</SectionTitle>
         {experienceList.map((experience) => (
           <ExperienceListElement
-            key={experience.company}
+            key={experience.id}
+            id={experience.id}
             company={experience.company}
             position={experience.position}
             since={experience.since}
@@ -56,7 +61,8 @@ export const Experience = (): JSX.Element => {
         <SectionTitle>Education</SectionTitle>
         {educationList.map((experience) => (
           <ExperienceListElement
-            key={experience.company}
+            key={experience.id}
+            id={experience.id}
             company={experience.company}
             position={experience.position}
             since={experience.since}

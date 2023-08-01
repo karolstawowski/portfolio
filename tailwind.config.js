@@ -6,6 +6,7 @@ module.exports = {
     screens: {
       xs: '420px',
       ...defaultTheme.screens,
+      '3xl': '1920px',
     },
     fontFamily: {
       console: ['consolas', 'monaco', 'monospace'],

@@ -102,9 +102,9 @@ body {
 }
 
 :root {
-  --g1: rgb(98, 0, 234);
-  --g2: rgb(236, 64, 122);
-  --g3: rgb(253, 216, 53);
+  --g1: #5eead4;
+  --g2: #93c5fd;
+  --g3: #c084fc;
 }
 
 .card {
@@ -133,15 +133,8 @@ body {
   pointer-events: none;
   position: absolute;
   top: 0px;
-  transition: background-position 350ms ease, transform 350ms ease;
+  transition: background-position 300ms ease, transform 300ms ease;
   width: 100%;
-  z-index: 0;
-}
-
-.card-content {
-  position: relative;
-  transition: background-position 350ms ease;
-  z-index: 2;
 }
 
 .hover-zoom:hover {

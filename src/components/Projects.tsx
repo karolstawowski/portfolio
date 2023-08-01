@@ -1,20 +1,18 @@
-import { StarFilled } from '../icons/StarFilled'
 import { openSourceProjectsList, projectsList } from '../utils/projectsList'
 import { OpenSourceProjectCard } from './Projects/OpenSourceProjectCard'
 import { ProjectCard } from './Projects/ProjectCard'
-import { RepositoryButton } from './Projects/RepositoryButton'
 import { SectionTitle } from './SectionTitle'
 
 export const Projects = (): JSX.Element => {
   return (
     <div className="flex flex-col gap-16 py-12 bg-primary" id="projects">
-      <div className="flex flex-col gap-6 px-6 xs:px-12 md:px-20 lg:px-28 xl:px-44 2xl:px-44">
+      <div className="flex flex-col gap-6 px-6 xs:px-12 md:px-20 lg:px-28 xl:px-44 2xl:px-80">
         <div className="flex items-center w-full gap-4">
           <div className="flex-auto h-[2px] bg-accent" />
           <SectionTitle>Selected projects</SectionTitle>
           <div className="flex-auto h-[2px] bg-accent" />
         </div>
-        <div className="grid gap-4 sm:gap-8 lg:grid-cols-2 2xl:grid-cols-3 lg:gap-6 2xl:gap-8">
+        <div className="grid gap-4 sm:gap-8 lg:grid-cols-2 3xl:grid-cols-3 lg:gap-6 2xl:gap-8">
           {projectsList.map((project) => (
             <div
               className="flex even:justify-end odd:justify-start"
@@ -36,9 +34,12 @@ export const Projects = (): JSX.Element => {
           <SectionTitle>Open source projects I participated in</SectionTitle>
           <div className="flex-auto h-[2px] bg-accent" />
         </div>
-        <div className="flex flex-col gap-2 rounded-md lg:gap-x-4 lg:grid lg:grid-cols-2 xl:grid-cols-3 lg:flex-row">
+        <div className="flex flex-col gap-2 rounded-md lg:gap-x-4 lg:grid md:grid-cols-2 2xl:grid-cols-3 3xl:grid-cols-4 lg:flex-row">
           {openSourceProjectsList.map((project) => (
-            <OpenSourceProjectCard project={project} />
+            <OpenSourceProjectCard
+              key={project.repositoryUrl}
+              project={project}
+            />
           ))}
         </div>
       </div>
