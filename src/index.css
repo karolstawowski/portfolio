@@ -6,23 +6,21 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   width: 100%;
-  background: #e2e8f0;
-  min-width: 300px;
+  min-width: 330px;
 }
 
 .link-underline {
   border-bottom-width: 0;
-  background-image: linear-gradient(transparent, transparent),
-    linear-gradient(#0284c7, #0284c7);
-  background-size: 0 3px;
-  background-position: 0 95%;
+  background-image: linear-gradient(#73787d, #73787d);
+  background-size: 0 2px;
+  background-position: 0 96%;
   background-repeat: no-repeat;
   transition: background-size 0.2s ease-in-out;
 }
 
 .link-underline:hover {
-  background-size: 100% 3px;
-  background-position: 0 95%;
+  background-size: 100% 2px;
+  background-position: 0 96%;
 }
 
 .animate-monitor-self-1 {
@@ -86,5 +84,81 @@ body {
   }
   0% {
     opacity: 0;
+  }
+}
+
+.animate-underscore {
+  animation: hidden 1.6s infinite;
+}
+
+@keyframes hidden {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+:root {
+  --g1: #5eead4;
+  --g2: #93c5fd;
+  --g3: #c084fc;
+}
+
+.card {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover:before {
+  background-position: 100% 100%;
+}
+
+.card:before {
+  background: linear-gradient(
+    130deg,
+    transparent 0% 33%,
+    var(--g1) 66%,
+    var(--g2) 85%,
+    var(--g3) 100%
+  );
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: '';
+  height: 100%;
+  left: 0px;
+  pointer-events: none;
+  position: absolute;
+  top: 0px;
+  transition: background-position 300ms ease, transform 300ms ease;
+  width: 100%;
+}
+
+.hover-zoom:hover {
+  animation: zoomIn 0.2s ease-in-out forwards;
+}
+
+.hover-zoom {
+  animation: zoomOut 0.2s ease-in-out forwards;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
   }
 }

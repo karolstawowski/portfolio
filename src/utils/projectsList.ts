@@ -9,6 +9,13 @@ type ProjectEntry = {
   livePreviewUrl?: string
 }
 
+export type OpenSourceProjectEntry = {
+  name: string
+  author: string
+  stars: number
+  repositoryUrl: string
+}
+
 const filterIcons = (
   iconNames: Array<string>,
   sourceIconsList: Technology[]
@@ -32,7 +39,7 @@ export const projectsList: ProjectEntry[] = [
     name: 'Zefir',
     imageName: 'weather_station',
     description:
-      'Air quality station based on Raspberry Pi 4 B with integrated frontend, backend and database server. It measures, stores and presents air condition parameters. Measuring unit contains of ESP32 module and various air quality sensors.',
+      'Air quality station based on Raspberry Pi 4B with integrated frontend, backend and database server. It measures, stores and presents air condition parameters. Measuring unit contains of various air quality sensors.',
     technologies: filterIcons(
       [
         'React.js',
@@ -87,5 +94,38 @@ export const projectsList: ProjectEntry[] = [
       'Machine learning model based on Convolutional Neural Network with an objective of recognising weather present in images. Achieved test dataset accuracy on the level of 68.8%.',
     technologies: filterIcons(['Tensorflow', 'Python'], iconsList),
     repositoryUrl: 'https://github.com/karolstawowski/WeatherImageRecognition',
+  },
+]
+
+export const openSourceProjectsList: OpenSourceProjectEntry[] = [
+  {
+    name: 'grafana',
+    author: 'grafana',
+    repositoryUrl: 'https://github.com/grafana/grafana/pull/72175',
+    stars: 56400,
+  },
+  {
+    name: 'tldraw',
+    author: 'tldraw',
+    repositoryUrl: 'https://github.com/tldraw/tldraw/pull/1143',
+    stars: 14600,
+  },
+  {
+    name: 'vitest',
+    author: 'vitest-dev',
+    repositoryUrl: 'https://github.com/vitest-dev/vitest/pull/2948',
+    stars: 9600,
+  },
+  {
+    name: 'C',
+    author: 'TodePond',
+    repositoryUrl: 'https://github.com/TodePond/C/pull/48',
+    stars: 6000,
+  },
+  {
+    name: 'particle-life-app',
+    author: 'tom-mohr',
+    repositoryUrl: 'https://github.com/tom-mohr/particle-life-app/pull/16',
+    stars: 530,
   },
 ]

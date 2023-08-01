@@ -6,6 +6,7 @@ import {
 } from './ExperienceListElement'
 
 const elementProps: ExperienceListElementProps = {
+  id: 1,
   company: 'MyCompany',
   position: 'Worker',
   since: new Date(2000, 1, 1),
@@ -16,6 +17,7 @@ describe(ExperienceListElement.name, () => {
   it('formats date correctly', () => {
     render(
       <ExperienceListElement
+        id={elementProps.id}
         company={elementProps.company}
         position={elementProps.position}
         since={elementProps.since}
@@ -31,6 +33,7 @@ describe(ExperienceListElement.name, () => {
   it('does not display end date if undefined', () => {
     render(
       <ExperienceListElement
+        id={elementProps.id}
         company={elementProps.company}
         position={elementProps.position}
         since={elementProps.since}
@@ -43,6 +46,7 @@ describe(ExperienceListElement.name, () => {
   it('displays position and company', () => {
     render(
       <ExperienceListElement
+        id={elementProps.id}
         company={elementProps.company}
         position={elementProps.position}
         since={elementProps.since}

@@ -8,15 +8,15 @@ export const TechButton = ({
   imageName,
 }: TechButtonProps): JSX.Element => {
   return (
-    <div className="ease-in-out duration-500 transition-shadow flex flex-wrap items-center justify-center w-[84px] h-[84px] rounded-md shadow-lg bg-sky-100 hover:shadow-[0_25px_25px_rgba(0,0,0,0.2)]">
+    <div className="card ease-in-out duration-500 transition-shadow flex flex-wrap items-center justify-center w-[84px] h-[84px] rounded-md shadow-lg bg-secondary">
       <img
         src={`./assets/${imageName}.svg`}
         height="32"
         width="32"
         alt={name}
-        className="w-8 h-8"
+        className="z-10 w-8 h-8"
       />
-      <span className="w-full text-sm text-center">{name}</span>
+      <span className="z-10 w-full text-sm text-center">{name}</span>
     </div>
   )
 }

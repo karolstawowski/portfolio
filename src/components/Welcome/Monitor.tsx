@@ -1,12 +1,12 @@
 export const Monitor = (): JSX.Element => {
   return (
-    <div className="w-[800px] h-[560px] scale-[.3] -mb-96 lg:-mb-64 xl:-mb-52 2xl:-mb-36 origin-top-left mt-8 sm:-mt-32 md:-mt-24 lg:scale-50 lg:-mt-20 2xl:-mt-12 xl:scale-[0.6] 2xl:scale-[0.7]">
+    <div className="w-[800px] h-[560px] scale-[.3] -mb-96 lg:-mb-64 xl:-mb-52 2xl:-mb-36 origin-top-left mt-12 sm:-mt-32 md:-mt-20 lg:scale-50 lg:-mt-20 2xl:-mt-16 xl:scale-[0.6] 2xl:scale-[0.7]">
       <div className="relative bg-monitor-outer-border w-full h-[466px] flex justify-center rounded-md">
-        <div className="absolute w-1 h-1 bg-slate-400 bottom-2 right-12" />
+        <div className="absolute w-1 h-1 bg-gray-400 bottom-2 right-12" />
         <div className="bg-monitor-bg m-4 w-full h-[418px] box-border flex flex-wrap overflow-hidden">
           <div className="w-full h-4 border-b-2 border-b-monitor-inner-border" />
           <div className="h-[402px] w-4 border-r-2 border-r-monitor-inner-border" />
-          <div className="h-[402px] w-28 border-r-2 border-r-monitor-inner-border bg-monitor-side-pannel p-3 [&>*]:h-2 [&>*>*]:h-1 [&>*>*]:bg-slate-200 [&>*]:relative">
+          <div className="h-[402px] w-28 border-r-2 border-r-monitor-inner-border bg-monitor-side-pannel p-3 [&>*]:h-2 [&>*>*]:h-1 [&>*>*]:bg-gray-200 [&>*]:relative">
             <div className="animate-monitor">
               <div className="w-16" />
             </div>
