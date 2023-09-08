@@ -31,8 +31,8 @@ const educationList: Array<ExperienceListElementProps> = [
   {
     id: 4,
     position: 'University of Economics in Katowice',
-    company:
-      'Bachelor of Computer Science, Databases and Data Engineering specialisation',
+    company: 'Bachelor of Computer Science',
+    more: 'Databases and Data Engineering specialisation',
     since: new Date(2020, 9),
     to: new Date(2023, 6),
   },
@@ -40,35 +40,25 @@ const educationList: Array<ExperienceListElementProps> = [
 
 export const Experience = (): JSX.Element => {
   return (
-    <div
-      id="experience"
-      className="grid-flow-col gap-6 py-8 my-8 md:grid md:grid-cols-2"
-    >
-      <div>
-        <SectionTitle>Experience</SectionTitle>
-        {experienceList.map((experience) => (
-          <ExperienceListElement
-            key={experience.id}
-            id={experience.id}
-            company={experience.company}
-            position={experience.position}
-            since={experience.since}
-            to={experience.to}
-          />
-        ))}
-      </div>
-      <div>
-        <SectionTitle>Education</SectionTitle>
-        {educationList.map((experience) => (
-          <ExperienceListElement
-            key={experience.id}
-            id={experience.id}
-            company={experience.company}
-            position={experience.position}
-            since={experience.since}
-            to={experience.to}
-          />
-        ))}
+    <div className="flex flex-col items-center w-full">
+      <div className="min-w[330px] w-10/12 xs:w-10/12 md:w-3/4 xl:w-9/12 2xl:w-8/12 max-w-8xl">
+        <div
+          id="experience"
+          className="grid-flow-col gap-6 py-8 my-8 md:grid md:grid-cols-2"
+        >
+          <div>
+            <SectionTitle>Experience</SectionTitle>
+            {experienceList.map((experience) => (
+              <ExperienceListElement key={experience.id} {...experience} />
+            ))}
+          </div>
+          <div>
+            <SectionTitle>Education</SectionTitle>
+            {educationList.map((experience) => (
+              <ExperienceListElement key={experience.id} {...experience} />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -17,6 +17,7 @@ export type ExperienceListElementProps = {
   id: number
   position: string
   company: string
+  more?: string
   since: Date
   to?: Date
 }
@@ -24,6 +25,7 @@ export type ExperienceListElementProps = {
 export const ExperienceListElement = ({
   company,
   position,
+  more,
   since,
   to,
 }: ExperienceListElementProps): JSX.Element => {
@@ -37,7 +39,9 @@ export const ExperienceListElement = ({
   return (
     <div className="my-6">
       <h4 className="text-lg font-semibold md:text-2xl">{position}</h4>
-      <h5 className="italic">{company}</h5>
+      <h5 className="italic">
+        {company} {more ? '-' : ''} {more}
+      </h5>
       <p>
         {startDate}
         {' - ' + (endDate ?? 'now')}

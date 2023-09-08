@@ -1,13 +1,13 @@
 export type ContactButtonProps = {
   title: string
   linkTo: string
-  imgName: string
+  element: string
 }
 
 export const ContactButton = ({
   title,
   linkTo,
-  imgName,
+  element,
 }: ContactButtonProps): JSX.Element => {
   return (
     <a
@@ -17,13 +17,7 @@ export const ContactButton = ({
       aria-label={title}
     >
       <div className="flex items-center h-full rounded-lg shadow justify-evenly bg-primary hover:shadow-lg hover:bg-blue-400 active:bg-blue-300">
-        <img
-          src={`./assets/${imgName}.svg`}
-          height="32"
-          width="32"
-          className="w-8 h-8"
-          alt={title}
-        />
+        {element}
         <span>{title}</span>
       </div>
     </a>

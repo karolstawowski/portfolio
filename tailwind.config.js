@@ -28,6 +28,42 @@ module.exports = {
         'editor-purple': '#DB75F0',
         'editor-green': '#47EB47',
       },
+      maxWidth: {
+        '8xl': '90rem',
+      },
+      animation: {
+        'fade-in-from-up': 'fade-in-from-up 0.5s ease-out 0.4s forwards',
+        twist: 'twist 0.6s linear forwards infinite',
+      },
+      keyframes: {
+        'fade-in-from-up': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(-10px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0px)',
+          },
+        },
+        twist: {
+          '0%': {
+            transform: 'rotate(0deg)',
+          },
+          '25%': {
+            transform: 'rotate(10deg)',
+          },
+          '50%': {
+            transform: 'rotate(0deg)',
+          },
+          '75%': {
+            transform: 'rotate(-10deg)',
+          },
+          '100%': {
+            transform: 'rotate(0deg)',
+          },
+        },
+      },
     },
   },
 }
