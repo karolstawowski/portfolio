@@ -101,14 +101,7 @@ body {
   }
 }
 
-:root {
-  --g1: #5eead4;
-  --g2: #93c5fd;
-  --g3: #c084fc;
-}
-
 .card {
-  cursor: pointer;
   position: relative;
   overflow: hidden;
 }
@@ -121,9 +114,9 @@ body {
   background: linear-gradient(
     130deg,
     transparent 0% 33%,
-    var(--g1) 66%,
-    var(--g2) 85%,
-    var(--g3) 100%
+    #5eead4 66%,
+    #93c5fd 85%,
+    #c084fc 100%
   );
   background-position: 0% 0%;
   background-size: 300% 300%;
@@ -133,32 +126,6 @@ body {
   pointer-events: none;
   position: absolute;
   top: 0px;
-  transition: background-position 300ms ease, transform 300ms ease;
+  transition: background-position 300ms ease, transform 100ms ease;
   width: 100%;
-}
-
-.hover-zoom:hover {
-  animation: zoomIn 0.2s ease-in-out forwards;
-}
-
-.hover-zoom {
-  animation: zoomOut 0.2s ease-in-out forwards;
-}
-
-@keyframes zoomIn {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.05);
-  }
-}
-
-@keyframes zoomOut {
-  0% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
