@@ -8,7 +8,7 @@ export const TechButton = ({
   imageName,
 }: TechButtonProps): JSX.Element => {
   return (
-    <div className="card ease-in-out duration-500 transition-shadow flex flex-wrap items-center justify-center w-[84px] h-[84px] rounded-md shadow-lg bg-secondary">
+    <div className=" card ease-in-out duration-500 transition-shadow flex flex-wrap items-center justify-center w-[84px] h-[84px] rounded-md shadow-lg bg-secondary">
       <img
         src={`./assets/${imageName}.svg`}
         height="32"

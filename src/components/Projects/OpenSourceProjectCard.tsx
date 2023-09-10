@@ -10,7 +10,7 @@ export const OpenSourceProjectCard = ({
   project,
 }: OpenSourceProjectCardProps): JSX.Element => {
   return (
-    <div className="relative flex flex-col justify-between w-full h-full p-4 rounded-md shadow bg-secondary xl:h-24">
+    <div className="relative flex flex-col justify-between w-full h-full p-4 rounded-md shadow text-background bg-primary xl:h-24">
       <h5 className="text-lg">
         <span className="font-thin">{project.name}</span>/
         <span className="text-sm">{project.author}</span>

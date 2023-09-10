@@ -1,6 +1,7 @@
 import { Play } from '../../icons/Play'
 import { Technology } from '../../utils/technologiesList'
 import { LivePreviewButton } from './LivePreviewButton'
+import { RepositoryButton } from './RepositoryButton'
 import { TechIcon } from './TechIcon'
 
 type ProjectCardProps = {
@@ -21,7 +22,7 @@ export const ProjectCard = ({
   livePreviewUrl,
 }: ProjectCardProps): JSX.Element => {
   return (
-    <div className="min-w-[228px] box-content ease-in-out duration-300 transition-shadow p-6 xs:p-8 bg-blue-100 rounded-lg flex flex-col shadow">
+    <div className="box-content flex flex-col p-6 transition-shadow duration-300 ease-in-out rounded-lg shadow text-background xs:p-8 bg-primary">
       <h4 className="w-full text-xl font-semibold">{name}</h4>
       <div className="w-10 h-[2px] bg-accent mt-2" />
       <img
@@ -31,7 +32,7 @@ export const ProjectCard = ({
         width="420"
         alt={name}
       />
-      <p className="mb-6 text-black text-md">{description}</p>
+      <p className="mb-6 text-md">{description}</p>
       <div className="flex justify-between w-full mt-auto justify-self-end">
         <div
           className={`flex flex-wrap gap-x-1 gap-y-3 ${
@@ -46,25 +47,12 @@ export const ProjectCard = ({
             />
           ))}
         </div>
-        {livePreviewUrl ? (
+        {livePreviewUrl && (
           <LivePreviewButton name={name} url={livePreviewUrl} />
-        ) : null}
-        {repositoryUrl ? (
-          <a
-            href={repositoryUrl}
-            className="flex items-center justify-center w-10 h-10 bg-white rounded-lg outline outline-2 outline-blue-400 hover:outline-blue-300 active:outline-blue-200"
-            target="_blank"
-            aria-label={`Github repository of ${name}`}
-          >
-            <img
-              src="./assets/github.svg"
-              height="32"
-              width="32"
-              className="w-8 h-8"
-              alt={`Github repository of ${name}`}
-            />
-          </a>
-        ) : null}
+        )}
+        {repositoryUrl && (
+          <RepositoryButton name={name} url={repositoryUrl} key={name} />
+        )}
       </div>
     </div>
   )

@@ -4,7 +4,7 @@ export const Monitor = (): JSX.Element => {
       <div className="absolute w-[800px] h-[560px] scale-[.34] xs:scale-[.4] sm:scale-[.5] md:scale-[.6] xl:scale-[0.65] 2xl:scale-[0.7] 3xl:scale-[0.75]">
         <div className="relative bg-monitor-outer-border w-full h-[466px] flex justify-center rounded-md">
           <div className="absolute w-1 h-1 bg-gray-400 bottom-2 right-12" />
-          <div className="bg-monitor-bg m-4 w-full h-[418px] box-border flex flex-wrap overflow-hidden">
+          <div className="bg-monitor-bg m-4 w-full h-[418px] box-border flex flex-wrap overflow-hidden glow">
             <div className="w-full h-4 border-b-2 border-b-monitor-inner-border" />
             <div className="h-[402px] w-4 border-r-2 border-r-monitor-inner-border" />
             <div className="h-[402px] w-28 border-r-2 border-r-monitor-inner-border bg-monitor-side-pannel p-3 [&>*]:h-2 [&>*>*]:h-1 [&>*>*]:bg-gray-200 [&>*]:relative">

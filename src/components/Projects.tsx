@@ -5,9 +5,9 @@ import { SectionTitle } from './SectionTitle'
 
 export const Projects = (): JSX.Element => {
   return (
-    <div className="flex flex-col items-center w-full bg-primary">
-      <div className="min-w[330px] w-10/12 xs:w-10/12 md:w-3/4 xl:w-9/12 2xl:w-8/12 max-w-8xl">
-        <div className="flex flex-col gap-16 py-12 " id="projects">
+    <div className="flex flex-col items-center w-full ">
+      <div className="w-11/12 px-4 rounded-lg xs:w-10/12 md:w-3/4 xl:w-9/12 2xl:w-8/12 max-w-8xl bg-secondary xs:px-8">
+        <div className="flex flex-col gap-16 py-4 sm:py-8 " id="projects">
           <div className="flex flex-col gap-6">
             <div className="flex items-center w-full gap-4">
               <div className="flex-auto h-[2px] bg-accent" />

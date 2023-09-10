@@ -2,7 +2,7 @@ import { ArrowNarrowRight } from '../../icons/ArrowNarrowRight'
 
 export const Console = (): JSX.Element => {
   return (
-    <div className="mt-2 ml-auto bg-gray-700 rounded-md font-console md:mt-0 h-80 xs:h-56 md:h-72 md:ml-0 2xl:h-64 md:col-span-2">
+    <div className="mt-2 ml-auto bg-gray-700 rounded-md font-console md:mt-0 h-80 xs:h-72 md:h-96 md:ml-0 lg:h-72 2xl:h-64 md:col-span-2">
       <div className="flex items-center justify-end w-full h-8 gap-1 px-2 bg-gray-500 rounded-t-md">
         <div className="w-4 h-4 bg-gray-400 rounded-full" />
         <div className="w-4 h-4 bg-gray-400 rounded-full" />
