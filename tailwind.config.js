@@ -13,9 +13,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#93c5fd',
-        secondary: '#fde3c9',
-        accent: '#4374ad',
+        primary: '#67c1e0',
+        secondary: '#0c2f3b',
+        accent: '#3cb0d7',
+        background: '#030a0d',
+        text: '#d5eef6',
         'monitor-inner-border': '#32323C',
         'monitor-side-pannel': '#0B0D14',
         'monitor-outer-border': '#393A3C',
@@ -34,6 +36,7 @@ module.exports = {
       animation: {
         'fade-in-from-up': 'fade-in-from-up 0.5s ease-out 0.4s forwards',
         twist: 'twist 0.6s linear forwards infinite',
+        'up-illuminate': 'up-illuminate 0.1s linear forwards',
       },
       keyframes: {
         'fade-in-from-up': {
@@ -61,6 +64,14 @@ module.exports = {
           },
           '100%': {
             transform: 'rotate(0deg)',
+          },
+        },
+        'up-illuminate': {
+          '0%': {
+            transform: 'translateY(0px)',
+          },
+          '100%': {
+            transform: 'translateY(-5px)',
           },
         },
       },
