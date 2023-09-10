@@ -1,6 +1,6 @@
-import { Github } from '../icons/Github'
-import { Linkedin } from '../icons/Linkedin'
-import { Send } from '../icons/Send'
+import { Github } from '../../icons/Github'
+import { Linkedin } from '../../icons/Linkedin'
+import { Send } from '../../icons/Send'
 
 export const Socials = (): JSX.Element => {
   return (
@@ -12,7 +12,7 @@ export const Socials = (): JSX.Element => {
           target="_blank"
           aria-label={contactButton.title}
         >
-          <span>{contactButton.element}</span>
+          <span className="hover:text-accent">{contactButton.element}</span>
         </a>
       ))}
     </div>
