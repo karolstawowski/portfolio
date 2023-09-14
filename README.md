@@ -1,4 +1,4 @@
-# ✨ Portfolio 
+# ✨ Portfolio
 
 ## [Live website](https://karolstawowski.github.io/portfolio/)
 
