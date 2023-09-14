@@ -102,25 +102,26 @@ export const openSourceProjectsList: OpenSourceProjectEntry[] = [
     name: 'grafana',
     author: 'grafana',
     repositoryUrl: 'https://github.com/grafana/grafana/pull/72175',
-    stars: 56400,
+    stars: 57100,
   },
   {
     name: 'tldraw',
     author: 'tldraw',
     repositoryUrl: 'https://github.com/tldraw/tldraw/pull/1143',
-    stars: 14600,
+    stars: 17900,
   },
   {
     name: 'vitest',
     author: 'vitest-dev',
     repositoryUrl: 'https://github.com/vitest-dev/vitest/pull/2948',
-    stars: 9600,
+    stars: 10100,
   },
   {
     name: 'C',
     author: 'TodePond',
-    repositoryUrl: 'https://github.com/TodePond/C/pull/48',
-    stars: 6000,
+    repositoryUrl:
+      'https://github.com/TodePond/WhenWillProgrammersStopMakingDecisionsForOurSocietyAndJustLeaveUsAloneAlsoHackerNewsIsAVileWebsite/pull/48',
+    stars: 7200,
   },
   {
     name: 'particle-life-app',
