@@ -8,16 +8,16 @@ module.exports = {
       ...defaultTheme.screens,
       '3xl': '1920px',
     },
-    fontFamily: {
-      console: ['consolas', 'monaco', 'monospace'],
-    },
     extend: {
+      fontFamily: {
+        console: ['consolas', 'monaco', 'monospace'],
+      },
       colors: {
-        primary: '#67c1e0',
-        secondary: '#0c2f3b',
-        accent: '#3cb0d7',
-        background: '#030a0d',
-        text: '#d5eef6',
+        primary: '#00ABBD',
+        secondary: '#0C2F3B',
+        accent: '#3CB0D7',
+        background: '#030A0D',
+        text: '#D5EEF6',
         'monitor-inner-border': '#32323C',
         'monitor-side-pannel': '#0B0D14',
         'monitor-outer-border': '#393A3C',

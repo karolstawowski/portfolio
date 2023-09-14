@@ -9,6 +9,17 @@ body {
   min-width: 330px;
 }
 
+.background-gradient {
+  background: linear-gradient(140deg, #0097a7 0%, #0097a7 45%, #1fb2c6 80%);
+}
+
+.text-gradient {
+  background: #0097a7;
+  background: linear-gradient(to bottom right, #0097a7 40%, #4dd0e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .glow {
   box-shadow: 0 0 86px 4px rgba(255, 255, 255, 0.3);
   z-index: 10;
@@ -17,16 +28,16 @@ body {
 
 .link-underline {
   border-bottom-width: 0;
-  background-image: linear-gradient(#0c2f3b, #0c2f3b);
+  background-image: linear-gradient(#3cb0d7, #3cb0d7);
   background-size: 0 2px;
-  background-position: 0 96%;
+  background-position: 0 98%;
   background-repeat: no-repeat;
   transition: background-size 0.2s ease-in-out;
 }
 
 .link-underline:hover {
   background-size: 100% 2px;
-  background-position: 0 96%;
+  background-position: 0 98%;
 }
 
 .animate-monitor-self-1 {

@@ -4,7 +4,7 @@ import { SectionTitle } from './SectionTitle'
 export const About = (): JSX.Element => {
   return (
     <div className="flex flex-col items-center w-full">
-      <div className="w-11/12 px-4 rounded-lg xs:w-10/12 md:w-3/4 xl:w-9/12 2xl:w-8/12 max-w-8xl bg-primary xs:px-8">
+      <div className="w-11/12 px-4 rounded-lg xs:w-10/12 md:w-3/4 xl:w-9/12 2xl:w-8/12 max-w-8xl background-gradient xs:px-8">
         <div className="py-4 my-8 sm:py-8 md:grid-cols-5 md:grid" id="about">
           <div className="md:col-span-3 md:mr-24 2xl:mr-44 text-background">
             <SectionTitle>About me</SectionTitle>
