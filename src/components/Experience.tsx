@@ -29,6 +29,14 @@ const experienceList: Array<ExperienceListElementProps> = [
 
 const educationList: Array<ExperienceListElementProps> = [
   {
+    id: 5,
+    position: 'University of Economics in Katowice',
+    company: 'Master of Computer Science',
+    more: 'Programming of Intelligent Systems specialisation',
+    since: new Date(2023, 9),
+    to: new Date(2025, 6),
+  },
+  {
     id: 4,
     position: 'University of Economics in Katowice',
     company: 'Bachelor of Computer Science',
@@ -41,7 +49,7 @@ const educationList: Array<ExperienceListElementProps> = [
 export const Experience = (): JSX.Element => {
   return (
     <div className="flex flex-col items-center w-full">
-      <div className=" w-11/12 xs:w-10/12 md:w-3/4 xl:w-9/12 2xl:w-8/12 max-w-8xl">
+      <div className="w-11/12 xs:w-10/12 md:w-3/4 xl:w-9/12 2xl:w-8/12 max-w-8xl">
         <div
           id="experience"
           className="grid-flow-col gap-6 py-8 my-8 md:grid md:grid-cols-2"
