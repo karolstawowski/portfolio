@@ -1,11 +1,12 @@
 import { FC, SVGProps } from 'react'
 
-export const Play: FC<SVGProps<SVGSVGElement>> = ({
+export const ExternalLink: FC<SVGProps<SVGSVGElement>> = ({
   ...props
 }): JSX.Element => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
+      className="icon icon-tabler icon-tabler-external-link"
       width={32}
       height={32}
       viewBox="0 0 24 24"
@@ -16,12 +17,10 @@ export const Play: FC<SVGProps<SVGSVGElement>> = ({
       strokeLinejoin="round"
       {...props}
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path
-        d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
-        strokeWidth="0"
-        fill="currentColor"
-      />
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
+      <path d="M11 13l9 -9"></path>
+      <path d="M15 4h5v5"></path>
     </svg>
   )
 }

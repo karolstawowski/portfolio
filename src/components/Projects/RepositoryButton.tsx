@@ -12,11 +12,11 @@ export const RepositoryButton = ({
   return (
     <a
       href={url}
-      className="flex items-center justify-center w-10 h-10 bg-white rounded-lg shadow-2xl outline outline-2 outline-secondary hover:outline-text"
+      className="grid rounded-lg shadow-lg place-items-center w-11 h-11 bg-button hover:bg-button-hover"
       target="_blank"
       aria-label={`Github repository of ${name}`}
     >
-      <Github width={32} height={32} />
+      <Github width={28} height={28} />
     </a>
   )
 }
