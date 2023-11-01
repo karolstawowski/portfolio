@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: #00bcd1;
+  --accent-color: #3cb0d7;
+  --gradient-color: #33d1e7;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -10,12 +16,21 @@ body {
 }
 
 .background-gradient {
-  background: linear-gradient(140deg, #0097a7 0%, #0097a7 45%, #1fb2c6 80%);
+  background: linear-gradient(
+    140deg,
+    var(--primary-color) 0%,
+    var(--primary-color) 45%,
+    var(--gradient-color) 80%
+  );
 }
 
 .text-gradient {
-  background: #0097a7;
-  background: linear-gradient(to bottom right, #0097a7 40%, #4dd0e1 100%);
+  background: var(--primary-color);
+  background: linear-gradient(
+    to bottom right,
+    var(--primary-color) 40%,
+    var(--gradient-color) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -28,7 +43,7 @@ body {
 
 .link-underline {
   border-bottom-width: 0;
-  background-image: linear-gradient(#3cb0d7, #3cb0d7);
+  background-image: linear-gradient(var(--accent-color), var(--accent-color));
   background-size: 0 2px;
   background-position: 0 98%;
   background-repeat: no-repeat;
@@ -121,6 +136,7 @@ body {
 .card {
   position: relative;
   overflow: hidden;
+  transition: shadow 0.5s ease-in-out;
 }
 
 .card:hover:before {
@@ -130,7 +146,7 @@ body {
 .card:before {
   background: linear-gradient(
     130deg,
-    transparent 0% 33%,
+    transparent 33%,
     #5eead4 66%,
     #93c5fd 85%,
     #c084fc 100%

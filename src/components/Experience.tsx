@@ -20,7 +20,7 @@ const experienceList: Array<ExperienceListElementProps> = [
   },
   {
     id: 3,
-    position: 'Trainee Junior Frontend Developer',
+    position: 'Intern Junior Frontend Developer',
     company: 'Tom&Co',
     since: new Date(2021, 7),
     to: new Date(2021, 8),
