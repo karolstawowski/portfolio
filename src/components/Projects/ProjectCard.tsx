@@ -23,7 +23,7 @@ export const ProjectCard = ({
   return (
     <div className="box-content flex flex-col p-6 transition-shadow duration-300 ease-in-out rounded-lg shadow text-background xs:p-8 background-gradient">
       <h4 className="w-full text-xl font-semibold">{name}</h4>
-      <div className="w-10 h-[2px] bg-text mt-2" />
+      <div className="w-10 h-[2px] bg-button mt-2" />
       <img
         src={`./assets/projects/${imgName}.png`}
         className="object-cover w-full my-4 rounded-md"
