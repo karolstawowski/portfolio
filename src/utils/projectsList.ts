@@ -102,31 +102,30 @@ export const openSourceProjectsList: OpenSourceProjectEntry[] = [
     name: 'grafana',
     author: 'grafana',
     repositoryUrl: 'https://github.com/grafana/grafana/pull/72175',
-    stars: 57100,
+    stars: 58400,
   },
   {
     name: 'tldraw',
     author: 'tldraw',
     repositoryUrl: 'https://github.com/tldraw/tldraw/pull/1143',
-    stars: 17900,
+    stars: 28800,
   },
   {
     name: 'vitest',
     author: 'vitest-dev',
     repositoryUrl: 'https://github.com/vitest-dev/vitest/pull/2948',
-    stars: 10100,
+    stars: 10800,
   },
   {
-    name: 'C',
+    name: 'nDreamBeard',
     author: 'TodePond',
-    repositoryUrl:
-      'https://github.com/TodePond/WhenWillProgrammersStopMakingDecisionsForOurSocietyAndJustLeaveUsAloneAlsoHackerNewsIsAVileWebsite/pull/48',
-    stars: 7200,
+    repositoryUrl: 'https://github.com/TodePond/nDreamBerd/pull/48',
+    stars: 8700,
   },
   {
     name: 'particle-life-app',
     author: 'tom-mohr',
     repositoryUrl: 'https://github.com/tom-mohr/particle-life-app/pull/16',
-    stars: 530,
+    stars: 590,
   },
 ]
