@@ -21,7 +21,7 @@ const contactButtons: {
   {
     title: 'Email',
     element: <Send width={32} height={32} />,
-    linkTo: 'mailto:karol_stawowski@wp.pl',
+    linkTo: 'mailto:stawowski.dev@gmail.com',
   },
 ]
 
