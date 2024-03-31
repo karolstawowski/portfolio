@@ -1,4 +1,4 @@
-import { iconsList, Technology } from './technologiesList'
+import { iconsList, Technology } from './technologies'
 
 type ProjectEntry = {
   name: string
@@ -99,33 +99,39 @@ export const projectsList: ProjectEntry[] = [
 
 export const openSourceProjectsList: OpenSourceProjectEntry[] = [
   {
+    name: 'storybook',
+    author: 'storybookjs',
+    repositoryUrl: 'https://github.com/storybookjs/storybook/pull/25931',
+    stars: 82500,
+  },
+  {
     name: 'grafana',
     author: 'grafana',
     repositoryUrl: 'https://github.com/grafana/grafana/pull/72175',
-    stars: 58400,
+    stars: 60000,
   },
   {
     name: 'tldraw',
     author: 'tldraw',
     repositoryUrl: 'https://github.com/tldraw/tldraw/pull/1143',
-    stars: 28800,
+    stars: 32100,
   },
   {
     name: 'vitest',
     author: 'vitest-dev',
     repositoryUrl: 'https://github.com/vitest-dev/vitest/pull/2948',
-    stars: 10800,
+    stars: 11600,
   },
   {
-    name: 'nDreamBeard',
+    name: 'DreamBerd',
     author: 'TodePond',
     repositoryUrl: 'https://github.com/TodePond/nDreamBerd/pull/48',
-    stars: 8700,
+    stars: 9600,
   },
   {
     name: 'particle-life-app',
     author: 'tom-mohr',
     repositoryUrl: 'https://github.com/tom-mohr/particle-life-app/pull/16',
-    stars: 590,
+    stars: 685,
   },
 ]

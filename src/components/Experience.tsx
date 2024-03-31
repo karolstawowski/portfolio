@@ -1,50 +1,7 @@
-import {
-  ExperienceListElement,
-  ExperienceListElementProps,
-} from './Experience/ExperienceListElement'
+import { educationList } from '../constants/education'
+import { experienceList } from '../constants/experience'
+import { ExperienceListElement } from './Experience/ExperienceListElement'
 import { SectionTitle } from './SectionTitle'
-
-const experienceList: Array<ExperienceListElementProps> = [
-  {
-    id: 1,
-    position: 'Full Stack Developer',
-    company: 'Night Woods',
-    since: new Date(2023, 3),
-  },
-  {
-    id: 2,
-    position: 'Frontend Developer',
-    company: 'Night Woods',
-    since: new Date(2022, 2),
-    to: new Date(2022, 9),
-  },
-  {
-    id: 3,
-    position: 'Intern Junior Frontend Developer',
-    company: 'Tom&Co',
-    since: new Date(2021, 7),
-    to: new Date(2021, 8),
-  },
-]
-
-const educationList: Array<ExperienceListElementProps> = [
-  {
-    id: 5,
-    position: 'University of Economics in Katowice',
-    company: 'Master of Computer Science',
-    more: 'Programming of Intelligent Systems specialisation',
-    since: new Date(2023, 9),
-    to: new Date(2025, 6),
-  },
-  {
-    id: 4,
-    position: 'University of Economics in Katowice',
-    company: 'Bachelor of Computer Science',
-    more: 'Databases and Data Engineering specialisation',
-    since: new Date(2020, 9),
-    to: new Date(2023, 6),
-  },
-]
 
 export const Experience = (): JSX.Element => {
   return (

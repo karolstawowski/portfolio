@@ -1,4 +1,4 @@
-import { openSourceProjectsList, projectsList } from '../utils/projectsList'
+import { openSourceProjectsList, projectsList } from '../constants/projects'
 import { OpenSourceProjectCard } from './Projects/OpenSourceProjectCard'
 import { ProjectCard } from './Projects/ProjectCard'
 import { SectionTitle } from './SectionTitle'

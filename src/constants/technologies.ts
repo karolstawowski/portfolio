@@ -13,6 +13,8 @@ export const proficientTechnologies: Array<Technology> = [
   { name: 'Prisma', imageName: 'prisma' },
   { name: 'MaterialUI', imageName: 'materialui' },
   { name: 'Remix', imageName: 'remix' },
+  { name: 'React Router', imageName: 'react-router' },
+  { name: 'Playwright', imageName: 'playwright' },
   { name: 'RTL', imageName: 'rtl' },
   { name: 'Jest', imageName: 'jest' },
   { name: 'Vitest', imageName: 'vitest' },
@@ -31,17 +33,18 @@ export const proficientTechnologies: Array<Technology> = [
 export const familiarTechnologies: Array<Technology> = [
   { name: 'Node.js', imageName: 'nodejs' },
   { name: 'Express.js', imageName: 'expressjs' },
-  { name: 'React Router', imageName: 'react-router' },
   { name: 'tRPC', imageName: 'trpc' },
   { name: 'Next.js', imageName: 'nextjs' },
   { name: 'Docker', imageName: 'docker' },
   { name: 'Vite', imageName: 'vite' },
   { name: 'i18next', imageName: 'i18next' },
+  { name: 'styled-comp', imageName: 'styled-components' },
   { name: 'SASS', imageName: 'sass' },
   { name: 'Figma', imageName: 'figma' },
   { name: 'Python', imageName: 'python' },
   { name: 'PHP', imageName: 'php' },
   { name: 'Tensorflow', imageName: 'tensorflow' },
+  { name: 'Keras', imageName: 'keras' },
 ]
 
 export const iconsList: Array<Technology> =

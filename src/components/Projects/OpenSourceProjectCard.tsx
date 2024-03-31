@@ -1,5 +1,5 @@
 import { StarFilled } from '../../icons/StarFilled'
-import { OpenSourceProjectEntry } from '../../utils/projectsList'
+import { OpenSourceProjectEntry } from '../../constants/projects'
 import { RepositoryButton } from './RepositoryButton'
 
 type OpenSourceProjectCardProps = {

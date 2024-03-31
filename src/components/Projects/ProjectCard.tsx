@@ -1,4 +1,4 @@
-import { Technology } from '../../utils/technologiesList'
+import { Technology } from '../../constants/technologies'
 import { LivePreviewButton } from './LivePreviewButton'
 import { RepositoryButton } from './RepositoryButton'
 import { TechIcon } from './TechIcon'
