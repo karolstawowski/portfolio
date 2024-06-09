@@ -59,6 +59,23 @@ export const projectsList: ProjectEntry[] = [
       iconsList
     ),
   },
+
+  {
+    name: 'OxiZip',
+    imageName: 'oxizip',
+    description:
+      'A file archiver for Windows operating system. Program allows you to create and unpack ZIP archives. Created with .NET Windows Forms framework.',
+    technologies: filterIcons(['C#'], iconsList),
+    repositoryUrl: 'https://github.com/karolstawowski/OxiZip',
+  },
+  {
+    name: 'EuroSAT',
+    imageName: 'eurosat',
+    description:
+      'Set of neural networks to perform satelitte image land cover classification. Sentinel-2 satelitte images as training dataset. Best accuracy: DenseNet121 - 95,30%',
+    technologies: filterIcons(['Tensorflow', 'Python', 'Keras'], iconsList),
+    repositoryUrl: 'https://github.com/karolstawowski/EuroSAT',
+  },
   {
     name: 'MinesweeperTS',
     imageName: 'minesweeper',
@@ -72,28 +89,12 @@ export const projectsList: ProjectEntry[] = [
     livePreviewUrl: 'https://karolstawowski.github.io/MinesweeperTS',
   },
   {
-    name: 'OxiZip',
-    imageName: 'oxizip',
-    description:
-      'A file archiver for Windows operating system. Program allows you to create and unpack ZIP archives. Created with .NET Windows Forms framework.',
-    technologies: filterIcons(['C#'], iconsList),
-    repositoryUrl: 'https://github.com/karolstawowski/OxiZip',
-  },
-  {
     name: 'False Bravery',
     imageName: 'false_bravery',
     description:
       'A Discord Bot for League of Legends players which creates images with random champion, summoner spells, items and skill orders - then sends it to the selected Discord channel.',
     technologies: filterIcons(['Python'], iconsList),
     repositoryUrl: 'https://github.com/karolstawowski/false_bravery',
-  },
-  {
-    name: 'Weather Image Recognition',
-    imageName: 'weather_image_recognition',
-    description:
-      'Machine learning model based on Convolutional Neural Network with an objective of recognising weather present in images. Achieved test dataset accuracy on the level of 68.8%.',
-    technologies: filterIcons(['Tensorflow', 'Python'], iconsList),
-    repositoryUrl: 'https://github.com/karolstawowski/WeatherImageRecognition',
   },
 ]
 

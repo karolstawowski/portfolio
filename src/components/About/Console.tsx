@@ -25,7 +25,7 @@ export const Console = (): JSX.Element => {
           <span className="mr-[6px] text-green-400">
             <ArrowNarrowRight className="inline" width={20} height={20} />
           </span>
-          Beyond my programming experience, I completed my bachelor's degree{' '}
+          Beyond my programming experience, I completed my bachelor's degree at{' '}
           <span className="text-blue-400">
             University of Economics in Katowice
           </span>{' '}
