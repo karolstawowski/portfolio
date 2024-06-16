@@ -42,7 +42,7 @@ export const ExperienceListElement = ({
       <h5 className="italic">
         {company} {more ? '-' : ''} {more}
       </h5>
-      <p>
+      <p className="text-sm">
         {startDate}
         {' - ' + (endDate ?? 'now')}
       </p>

@@ -8,7 +8,7 @@ import { Welcome } from './components/Welcome'
 
 const App = (): JSX.Element => {
   return (
-    <div className="flex flex-col items-center  bg-background text-text-primary">
+    <div className="flex flex-col items-center bg-background text-text-primary">
       <Welcome />
       <About />
       <Technologies />
