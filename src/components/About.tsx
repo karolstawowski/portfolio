@@ -9,7 +9,7 @@ export const About = (): JSX.Element => {
           id="about"
         >
           <SectionTitle>About me</SectionTitle>
-          <div className="py-4 leading-7 whitespace-pre-wrap md:grid-cols-2 md:grid md:gap-x-16">
+          <div className="py-4 leading-7 whitespace-pre-wrap md:grid-cols-2 md:grid md:gap-x-16 lg:gap-x-20 2xl:gap-x-24">
             <p>
               Hi, my name is <b>Karol</b>. As a software developer, I have been
               sharpening my programming skills for the past{' '}
