@@ -20,6 +20,7 @@ export type ExperienceListElementProps = {
   more?: string
   since: Date
   to?: Date
+  displayDuration?: boolean
 }
 
 export const ExperienceListElement = ({
@@ -28,6 +29,7 @@ export const ExperienceListElement = ({
   more,
   since,
   to,
+  displayDuration,
 }: ExperienceListElementProps): JSX.Element => {
   const startDate =
     monthNames[since.getMonth()] + ' ' + since.getFullYear().toString()
@@ -36,16 +38,32 @@ export const ExperienceListElement = ({
     ? monthNames[to.getMonth()] + ' ' + to.getFullYear().toString()
     : undefined
 
+  const monthDuration = monthDiff(since, to)
+
+  const companyDescription = `${company} ${more ? `- ${more}` : ''}`
+
+  const experienceDuration = displayDuration
+    ? `(${monthDuration}
+    ${monthDuration > 1 ? 'months' : 'month'})`
+    : ''
+
+  const datesRangeDescription = `${startDate} - ${
+    endDate ?? 'now'
+  } ${experienceDuration}`
+
   return (
     <div className="my-6">
       <h4 className="text-lg font-semibold md:text-2xl">{position}</h4>
-      <h5 className="italic">
-        {company} {more ? '-' : ''} {more}
-      </h5>
-      <p className="text-sm">
-        {startDate}
-        {' - ' + (endDate ?? 'now')}
-      </p>
+      <h5 className="italic">{companyDescription}</h5>
+      <p className="text-sm">{datesRangeDescription}</p>
     </div>
+  )
+}
+
+const monthDiff = (dateFrom: Date, dateTo: Date = new Date()): number => {
+  return (
+    dateTo.getMonth() -
+    dateFrom.getMonth() +
+    12 * (dateTo.getFullYear() - dateFrom.getFullYear())
   )
 }

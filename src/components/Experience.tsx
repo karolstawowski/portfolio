@@ -14,7 +14,11 @@ export const Experience = (): JSX.Element => {
           <div>
             <SectionTitle>Experience</SectionTitle>
             {experienceList.map((experience) => (
-              <ExperienceListElement key={experience.id} {...experience} />
+              <ExperienceListElement
+                key={experience.id}
+                {...experience}
+                displayDuration
+              />
             ))}
           </div>
           <div>
