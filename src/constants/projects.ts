@@ -118,6 +118,12 @@ export const openSourceProjectsList: OpenSourceProjectEntry[] = [
     stars: 32100,
   },
   {
+    name: 'social-app',
+    author: 'bluesky-social',
+    repositoryUrl: 'https://github.com/bluesky-social/social-app/pull/7119',
+    stars: 15000,
+  },
+  {
     name: 'vitest',
     author: 'vitest-dev',
     repositoryUrl: 'https://github.com/vitest-dev/vitest/pull/2948',
