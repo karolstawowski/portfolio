@@ -1,6 +1,7 @@
 /// <reference types="vitest" />
 import { defineConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react-swc'
+import tailwindcss from '@tailwindcss/vite'
 import type { UserConfig as VitestUserConfigInterface } from 'vitest/config'
 
 const vitestConfig: VitestUserConfigInterface = {
@@ -13,6 +14,6 @@ const vitestConfig: VitestUserConfigInterface = {
 
 export default defineConfig({
   test: vitestConfig.test,
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
   base: './',
 })

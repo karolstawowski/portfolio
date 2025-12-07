@@ -1,6 +1,87 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+/* Theme Extensions for Tailwind v4 */
+@theme {
+  --screens-xs: 420px;
+  --screens-3xl: 1920px;
+
+  --font-console: 'consolas', 'monaco', 'monospace';
+
+  --color-primary: #00bcd1;
+  --color-secondary: #0c2f3b;
+  --color-accent: #3cb0d7;
+  --color-background: #030a0d;
+  --color-text-primary: #d5eef6;
+  --color-text-secondary: #839fa8;
+  --color-button: #d6f5ff;
+  --color-button-hover: #bfd3d9;
+  --color-monitor-inner-border: #32323c;
+  --color-monitor-side-pannel: #0b0d14;
+  --color-monitor-outer-border: #393a3c;
+  --color-monitor-bg: #131723;
+  --color-monitor-stand: #323334;
+  --color-editor-blue: #4799eb;
+  --color-editor-white: #d9d9d9;
+  --color-editor-red: #eb5547;
+  --color-editor-brown: #cc9166;
+  --color-editor-purple: #db75f0;
+  --color-editor-green: #47eb47;
+
+  --max-width-8xl: 90rem;
+}
+
+/* Custom Animations */
+@keyframes fade-in-from-up {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes twist {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes up-illuminate {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-from-up {
+    animation: fade-in-from-up 0.5s ease-out 0.4s forwards;
+  }
+
+  .animate-twist {
+    animation: twist 0.6s linear forwards infinite;
+  }
+
+  .animate-up-illuminate {
+    animation: up-illuminate 0.1s linear forwards;
+  }
+}
 
 :root {
   --primary-color: #00bcd1;
@@ -159,6 +240,8 @@ body {
   pointer-events: none;
   position: absolute;
   top: 0px;
-  transition: background-position 300ms ease, transform 100ms ease;
+  transition:
+    background-position 300ms ease,
+    transform 100ms ease;
   width: 100%;
 }
