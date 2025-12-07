@@ -1,3 +1,4 @@
+import { JSX } from 'react'
 import { Technology } from '../../constants/technologies'
 import { LivePreviewButton } from './LivePreviewButton'
 import { RepositoryButton } from './RepositoryButton'

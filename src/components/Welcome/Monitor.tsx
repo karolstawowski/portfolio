@@ -1,3 +1,5 @@
+import { JSX } from 'react'
+
 export const Monitor = (): JSX.Element => {
   return (
     <div className="flex items-center justify-center h-64 sm:h-72 md:h-96 xl:h-[26rem] 2xl:h-[24rem] min-w-full">

@@ -1,4 +1,4 @@
-import { FC, SVGProps } from 'react'
+import { FC, SVGProps, JSX } from 'react'
 
 export const Link: FC<SVGProps<SVGSVGElement>> = ({
   ...props

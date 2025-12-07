@@ -1,3 +1,4 @@
+import { JSX } from 'react'
 import { Link } from './NavigationBar/Link'
 
 export const Navbar = (): JSX.Element => {

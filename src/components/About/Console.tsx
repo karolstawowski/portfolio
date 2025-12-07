@@ -1,3 +1,4 @@
+import { JSX } from 'react'
 import { ArrowNarrowRight } from '../../icons/ArrowNarrowRight'
 
 export const Console = (): JSX.Element => {

@@ -2,6 +2,7 @@ import { Github } from '../icons/Github'
 import { Linkedin } from '../icons/Linkedin'
 import { Send } from '../icons/Send'
 import { ContactButton } from './Contact/ContactButton'
+import { JSX } from 'react'
 
 const contactButtons: {
   title: string

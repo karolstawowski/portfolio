@@ -1,3 +1,4 @@
+import { JSX } from 'react'
 import { Socials } from './Welcome/Socials'
 import { MainText } from './Welcome/MainText'
 import { Monitor } from './Welcome/Monitor'

@@ -1,3 +1,5 @@
+import { JSX } from 'react'
+
 type TechButtonProps = {
   name: string
   imageName: string

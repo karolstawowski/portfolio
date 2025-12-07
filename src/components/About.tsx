@@ -1,3 +1,4 @@
+import { JSX } from 'react'
 import { SectionTitle } from './SectionTitle'
 
 export const About = (): JSX.Element => {

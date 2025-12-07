@@ -1,3 +1,5 @@
+import { JSX } from 'react'
+
 const colorPalette = ['#00ABBD', '#0C2F3B', '#3CB0D7', '#030A0D']
 
 export const ColorPalette = (): JSX.Element => {

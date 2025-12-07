@@ -2,6 +2,7 @@ import { educationList } from '../constants/education'
 import { experienceList } from '../constants/experience'
 import { ExperienceListElement } from './Experience/ExperienceListElement'
 import { SectionTitle } from './SectionTitle'
+import { JSX } from 'react'
 
 export const Experience = (): JSX.Element => {
   return (

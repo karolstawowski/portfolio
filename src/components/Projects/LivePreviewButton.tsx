@@ -1,3 +1,4 @@
+import { JSX } from 'react'
 import { Link } from '../../icons/Link'
 
 type LivePreviewButtonProps = { url: string; name: string }

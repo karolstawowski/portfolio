@@ -1,3 +1,5 @@
+import { JSX } from 'react'
+
 type LinkProps = { title: string }
 
 export const Link = ({ title }: LinkProps): JSX.Element => {

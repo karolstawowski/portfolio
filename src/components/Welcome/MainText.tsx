@@ -1,3 +1,5 @@
+import { JSX } from 'react'
+
 export const MainText = (): JSX.Element => {
   return (
     <div className="flex flex-col gap-3 opacity-0 animate-fade-in-from-up">

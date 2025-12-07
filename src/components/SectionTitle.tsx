@@ -1,4 +1,4 @@
-import { PropsWithChildren } from 'react'
+import { JSX, PropsWithChildren } from 'react'
 
 type SectionTitleProps = PropsWithChildren
 

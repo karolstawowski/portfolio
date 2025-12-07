@@ -1,3 +1,4 @@
+import { JSX } from 'react'
 import { Github } from '../../icons/Github'
 
 type RepositoryButtonProps = {

@@ -1,3 +1,5 @@
+import { JSX } from 'react'
+
 const monthNames = [
   'January',
   'February',

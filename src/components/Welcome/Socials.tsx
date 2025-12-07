@@ -1,3 +1,4 @@
+import { JSX } from 'react'
 import { Github } from '../../icons/Github'
 import { Linkedin } from '../../icons/Linkedin'
 import { Send } from '../../icons/Send'

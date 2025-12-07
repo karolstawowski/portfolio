@@ -1,3 +1,4 @@
+import { JSX } from 'react'
 import { openSourceProjectsList, projectsList } from '../constants/projects'
 import { OpenSourceProjectCard } from './Projects/OpenSourceProjectCard'
 import { ProjectCard } from './Projects/ProjectCard'

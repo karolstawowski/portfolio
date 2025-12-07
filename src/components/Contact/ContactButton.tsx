@@ -1,3 +1,5 @@
+import { JSX } from 'react'
+
 export type ContactButtonProps = {
   title: string
   linkTo: string

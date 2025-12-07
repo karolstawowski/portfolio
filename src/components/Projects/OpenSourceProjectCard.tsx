@@ -1,3 +1,4 @@
+import { JSX } from 'react'
 import { StarFilled } from '../../icons/StarFilled'
 import { OpenSourceProjectEntry } from '../../constants/projects'
 import { RepositoryButton } from './RepositoryButton'
