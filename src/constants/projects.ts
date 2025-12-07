@@ -18,7 +18,7 @@ export type OpenSourceProjectEntry = {
 
 const filterIcons = (
   iconNames: Array<string>,
-  sourceIconsList: Technology[]
+  sourceIconsList: Technology[],
 ): Technology[] => {
   return sourceIconsList.filter((el) => iconNames.includes(el.name))
 }
@@ -56,10 +56,21 @@ export const projectsList: ProjectEntry[] = [
         'React Router',
         'Docker',
       ],
-      iconsList
+      iconsList,
     ),
   },
-
+  {
+    name: 'Photography and videography portfolio',
+    imageName: 'pawel_portfolio',
+    description:
+      'Professional portfolio website showcasing photography and videography work. Features a modern, responsive design built with Gatsby and React. Leverages Contentful headless CMS for efficient content management and dynamic media distribution.',
+    technologies: filterIcons(
+      ['React.js', 'TypeScript', 'Tailwind', 'Gatsby', 'Contentful'],
+      iconsList,
+    ),
+    repositoryUrl: undefined,
+    livePreviewUrl: 'https://www.pawelnawrot.com/',
+  },
   {
     name: 'OxiZip',
     imageName: 'oxizip',
@@ -68,6 +79,7 @@ export const projectsList: ProjectEntry[] = [
     technologies: filterIcons(['C#'], iconsList),
     repositoryUrl: 'https://github.com/karolstawowski/OxiZip',
   },
+
   {
     name: 'EuroSAT',
     imageName: 'eurosat',
@@ -83,7 +95,7 @@ export const projectsList: ProjectEntry[] = [
       'React and TypeScript implementation of popular old-school single person game Minesweeper. The player must uncover a grid of tiles, some of which contain mines.',
     technologies: filterIcons(
       ['React.js', 'TypeScript', 'Tailwind', 'Vite'],
-      iconsList
+      iconsList,
     ),
     repositoryUrl: 'https://github.com/karolstawowski/MinesweeperTS',
     livePreviewUrl: 'https://karolstawowski.github.io/MinesweeperTS',
