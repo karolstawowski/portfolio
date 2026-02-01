@@ -44,9 +44,22 @@ export const ExperienceListElement = ({
 
   const companyDescription = `${company} ${more ? `- ${more}` : ''}`
 
+  const formatDuration = (months: number): string => {
+    if (months >= 12) {
+      const years = Math.floor(months / 12)
+      const remainingMonths = months % 12
+      const yearText = `${years} ${years > 1 ? 'years' : 'year'}`
+      const monthText =
+        remainingMonths > 0
+          ? ` ${remainingMonths} ${remainingMonths > 1 ? 'months' : 'month'}`
+          : ''
+      return `${yearText}${monthText}`
+    }
+    return `${months} ${months > 1 ? 'months' : 'month'}`
+  }
+
   const experienceDuration = displayDuration
-    ? `(${monthDuration}
-    ${monthDuration > 1 ? 'months' : 'month'})`
+    ? `(${formatDuration(monthDuration)})`
     : ''
 
   const datesRangeDescription = `${startDate} - ${
