@@ -1,12 +1,47 @@
-import { JSX } from 'react'
+import { CSSProperties, JSX, MouseEvent } from 'react'
 
 export const Monitor = (): JSX.Element => {
+  const onMonitorMove = (event: MouseEvent<HTMLDivElement>): void => {
+    const rect = event.currentTarget.getBoundingClientRect()
+    const x = ((event.clientX - rect.left) / rect.width) * 100
+    const y = ((event.clientY - rect.top) / rect.height) * 100
+
+    event.currentTarget.style.setProperty('--pointer-x', `${x}%`)
+    event.currentTarget.style.setProperty('--pointer-y', `${y}%`)
+  }
+
+  const resetMonitorLight = (event: MouseEvent<HTMLDivElement>): void => {
+    event.currentTarget.style.setProperty('--pointer-x', '50%')
+    event.currentTarget.style.setProperty('--pointer-y', '50%')
+  }
+
   return (
     <div className="flex items-center justify-center h-64 sm:h-72 md:h-96 xl:h-[26rem] 2xl:h-[24rem] min-w-full">
-      <div className="absolute w-[800px] h-[560px] scale-[.34] xs:scale-[.4] sm:scale-[.5] md:scale-[.6] xl:scale-[0.65] 2xl:scale-[0.7] 3xl:scale-[0.75]">
-        <div className="relative bg-monitor-outer-border w-full h-[466px] flex justify-center rounded-md">
+      <div
+        className="absolute w-[800px] h-[560px] scale-[.34] xs:scale-[.4] sm:scale-[.5] md:scale-[.6] xl:scale-[0.65] 2xl:scale-[0.7] 3xl:scale-[0.75] monitor-shell"
+        style={{ '--pointer-x': '50%', '--pointer-y': '50%' } as CSSProperties}
+      >
+        <div className="monitor-ambient" />
+        <div className="relative bg-monitor-outer-border w-full h-[466px] flex justify-center rounded-md border border-cyan-100/10">
+          <div className="absolute left-6 top-4 z-20 flex gap-2">
+            <div className="h-2.5 w-2.5 rounded-full bg-red-300/75" />
+            <div className="h-2.5 w-2.5 rounded-full bg-amber-200/75" />
+            <div className="h-2.5 w-2.5 rounded-full bg-emerald-300/75" />
+          </div>
           <div className="absolute w-1 h-1 bg-gray-400 bottom-2 right-12" />
-          <div className="bg-monitor-bg m-4 w-full h-[418px] box-border flex flex-wrap overflow-hidden glow">
+          <div
+            className="bg-monitor-bg m-4 w-full h-[418px] box-border flex flex-wrap overflow-hidden glow monitor-screen"
+            onMouseMove={onMonitorMove}
+            onMouseLeave={resetMonitorLight}
+            style={
+              { '--pointer-x': '50%', '--pointer-y': '50%' } as CSSProperties
+            }
+          >
+            <div className="monitor-reflection" />
+            {/* <div className="monitor-scanlines" /> */}
+            <div className="monitor-noise" />
+            {/* <div className="monitor-glow-orb monitor-glow-orb-1" /> */}
+            {/* <div className="monitor-glow-orb monitor-glow-orb-2" /> */}
             <div className="w-full h-4 border-b-2 border-b-monitor-inner-border" />
             <div className="h-[402px] w-4 border-r-2 border-r-monitor-inner-border" />
             <div className="h-[402px] w-28 border-r-2 border-r-monitor-inner-border bg-monitor-side-pannel p-3 [&>*]:h-2 [&>*>*]:h-1 [&>*>*]:bg-gray-200 [&>*]:relative">
@@ -104,7 +139,7 @@ export const Monitor = (): JSX.Element => {
                 <div className="w-14 bg-editor-brown" />
                 <div className="w-8 bg-editor-green" />
               </div>
-              <div className="ml-12 mt-[240px] animate-monitor-self-3">
+              <div className="ml-12 mt-60 animate-monitor-self-3">
                 <div className="w-8 bg-editor-green" />
                 <div className="w-8 bg-editor-blue" />
                 <div className="w-14 bg-editor-purple" />
@@ -124,8 +159,10 @@ export const Monitor = (): JSX.Element => {
             </div>
           </div>
         </div>
-        <div className="w-16 h-24 m-auto bg-gradient-to-b from-[#19191A] to-monitor-stand" />
-        <div className="h-4 m-auto rounded-t-lg w-96 bg-monitor-stand" />
+        <div className="w-16 h-24 m-auto bg-gradient-to-b from-[#19191A] to-monitor-stand relative overflow-hidden border-x border-cyan-100/10">
+          <div className="absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-white/10 to-transparent" />
+        </div>
+        <div className="h-4 m-auto rounded-t-lg w-96 bg-monitor-stand border border-cyan-100/10" />
       </div>
     </div>
   )

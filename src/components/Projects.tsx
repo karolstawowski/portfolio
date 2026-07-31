@@ -3,11 +3,14 @@ import { openSourceProjectsList, projectsList } from '../constants/projects'
 import { OpenSourceProjectCard } from './Projects/OpenSourceProjectCard'
 import { ProjectCard } from './Projects/ProjectCard'
 import { SectionTitle } from './SectionTitle'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 
 export const Projects = (): JSX.Element => {
+  const ref = useScrollReveal()
+
   return (
     <div className="flex flex-col items-center w-full ">
-      <div className="w-11/12 px-4 rounded-lg xs:w-10/12 md:w-3/4 xl:w-9/12 2xl:w-8/12 max-w-8xl bg-secondary xs:px-8">
+      <div ref={ref} className="scroll-reveal w-11/12 px-4 rounded-lg xs:w-10/12 md:w-3/4 xl:w-9/12 2xl:w-8/12 max-w-8xl bg-secondary xs:px-8">
         <div className="flex flex-col gap-16 py-4 sm:py-8 " id="projects">
           <div className="flex flex-col gap-6">
             <div className="flex items-center w-full gap-4">
@@ -15,7 +18,7 @@ export const Projects = (): JSX.Element => {
               <SectionTitle>Selected projects</SectionTitle>
               <div className="flex-auto h-[2px] bg-accent" />
             </div>
-            <div className="grid gap-4 sm:gap-8 lg:grid-cols-2 3xl:grid-cols-3 lg:gap-6 2xl:gap-8">
+            <div className="scroll-reveal-stagger grid gap-4 sm:gap-8 lg:grid-cols-2 3xl:grid-cols-3 lg:gap-6 2xl:gap-8">
               {projectsList.map((project) => (
                 <div
                   className="flex even:justify-end odd:justify-start"
